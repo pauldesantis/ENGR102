@@ -1,6 +1,6 @@
 int val = 0 ;
 
-//pauls a bitch
+
 sub forward()
 {
  OnFwd(OUT_AB,60);
