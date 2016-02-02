@@ -1,11 +1,17 @@
+sub closeClaw(){
+//this function will open the claw by rotating motor c forward
+       RotateMotor(OUT_C, 25, 45);
+}
+
+sub openClaw(){
+    RotateMotor(OUT_C, 25, -45);
+}
+
 task main(){
  //this is the main file that will eventually do shit
  openClaw();
+ closeClaw();
 }
 
-function openClaw(){
-//this function will open the claw by rotating motor c forward
 
-       RotateMotor(OUT_C, 30, 45);
-}
 

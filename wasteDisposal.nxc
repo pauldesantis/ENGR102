@@ -7,6 +7,15 @@ sub openClaw(){
     RotateMotor(OUT_C, 25, -45);
 }
 
+sub findDumpsite(){
+
+    SetSensorLight(IN_4)
+    while(light sensor < 30){
+    RotateMotor(OUT_A, 50, 45);
+    RotateMotor(OUT_B, 50, -45);
+    }
+}
+
 task main(){
  //this is the main file that will eventually do shit
  openClaw();
