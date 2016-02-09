@@ -41,7 +41,16 @@ sub findDumpsite(){
     }
     while(Sensor(IN_4) > THRESHOLD){
          OnFwd(OUT_AB,75);
+         if(Sensor(IN_4) > 90){
+             //return true;
+         }
     }
+    
+
+}
+
+sub dropOff(){
+    findDumpsite();
 }
 
 
@@ -57,8 +66,6 @@ task main(){
  OnFwd(OUT_AB, 75);
  //avoid();
  getTrash();
- }
- 
  }
 }
 
