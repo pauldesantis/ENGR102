@@ -8,14 +8,22 @@ sub openClaw(){
 }
 
 sub avoid(){
-    int THRESHOLD = 30; //need to figure out exact nuber for cm
+//avaoid checks 30cm in front, it obstacle, turns 45 degrees left
+    int THRESHOLD = 30;
     
     SetSensorLowspeed(IN_2);
-    if(SensorUS(IN_2) > THRESHOLD){
+    if(SensorUS(IN_2) < THRESHOLD){
          Off(OUT_AB);
-         RotateMotor(OUT_A, 25, 180);
+         RotateMotor(OUT_A, 50, 180);
     }
 
+}
+
+sub getTrash(){
+    SetSensorTouch(IN_1)
+    if(SENSOR_1 == 1){
+         closeClaw();
+    }
 }
 
 sub findDumpsite(){
@@ -23,11 +31,11 @@ sub findDumpsite(){
 
     SetSensorLight(IN_4);
     while(Sensor(IN_4) < THRESHOLD){        //robot will spin until it finds light > threshold
-         OnFwd(OUT_A, 50);
-         OnRev(OUT_B, 50);
+         OnFwd(OUT_A, 75);
+         OnRev(OUT_B, 75);
     }
     while(Sensor(IN_4) > THRESHOLD){
-         OnFwd(OUT_AB,50);
+         OnFwd(OUT_AB,75);
     }
 }
 
@@ -41,7 +49,7 @@ task main(){
  findDumpsite(); */
  
  while(true){
- OnFwd(OUT_AB, 50);
+ OnFwd(OUT_AB, 75);
  avoid();
  }
  
