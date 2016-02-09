@@ -16,7 +16,7 @@ sub avoid(){
     SetSensorLowspeed(IN_2);
     if(SensorUS(IN_2) < THRESHOLD){
          Off(OUT_AB);
-         RotateMotor(OUT_A, 75, 180);
+         RotateMotor(OUT_A, -75, 180);
     }
 
 }
@@ -25,11 +25,12 @@ bool getTrash(){
 //if the touch sensor is pressed, the claw will close locking the trash in a death grip
     SetSensorColorFull(IN_1);
     if(Sensor(IN_1)==2 || Sensor(IN_1)==4){     //if the color is blue or yellow closeClaw()
+         Off(OUT_AB);
          closeClaw();
          return true;
     }
     else{
-    return false;      //this may not work
+    //return false;      //this may not work
     }
 }
 

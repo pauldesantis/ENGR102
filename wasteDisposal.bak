@@ -29,7 +29,7 @@ bool getTrash(){
          return true;
     }
     else{
-    return false;
+    return false;      //this may not work
     }
 }
 
@@ -40,16 +40,16 @@ bool findDumpsite(){
     const int THRESHOLD = 50;    //Sets the value of the light threshold
 
     SetSensorLight(IN_4);
-    while(Sensor(IN_4) < THRESHOLD){        //robot will spin until it finds light > threshold
+    while(Sensor(IN_4) < THRESHOLD){        //robot will spin until it finds light intensity > threshold
          OnFwd(OUT_A, 75);
          OnRev(OUT_B, 75);
     }
-    while(Sensor(IN_4) > THRESHOLD){
+    while(Sensor(IN_4) > THRESHOLD){        //when the light intensity > threshold start moving toward light
          OnFwd(OUT_AB,75);
          avoid();
-         if(Sensor(IN_4) > 90){
-             return true;
-         }
+         if(Sensor(IN_4) > 90){             //if intensity > 90 we're close enough and return true
+             return true;                   //true will tell the bot that we have arrived to dumpsite
+         }                                  //and initiate dropOff procedure
     }
     
 
