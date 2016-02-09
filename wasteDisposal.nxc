@@ -7,22 +7,46 @@ sub openClaw(){
     RotateMotor(OUT_C, 25, -45);
 }
 
+sub avoid(){
+//avaoid checks 30cm in front, it obstacle, turns 45 degrees left
+    int THRESHOLD = 30;
+    
+    SetSensorLowspeed(IN_2);
+    if(SensorUS(IN_2) < THRESHOLD){
+         Off(OUT_AB);
+         RotateMotor(OUT_A, 50, 180);
+    }
+
+}
+
 sub findDumpsite(){
     int THRESHOLD = 50;    //Sets the value of the light threshold
 
     SetSensorLight(IN_4);
     while(Sensor(IN_4) < THRESHOLD){        //robot will spin until it finds light > threshold
-         OnFwd(OUT_A, 50);
-         OnRev(OUT_B, 50);
-
+         OnFwd(OUT_A, 75);
+         OnRev(OUT_B, 75);
+    }
+    while(Sensor(IN_4) > THRESHOLD){
+         OnFwd(OUT_AB,75);
     }
 }
 
+
 task main(){
  //this is the main file that will eventually do shit
- openClaw();
+
+ /*openClaw();
  closeClaw();
- findDumpsite();
+ while(true){
+ findDumpsite(); */
+ 
+ while(true){
+ OnFwd(OUT_AB, 75);
+ avoid();
+ }
+ 
+ }
 }
 
 
