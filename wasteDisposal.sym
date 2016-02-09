@@ -1,376 +1,649 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__signed_stack_001findDumpsite	6	1	0	4	6
-1	__D0openClaw	6	1	4	4	2
-2	__D0main	6	1	8	4	4
-3	__rotate_theAngle2	5	1	12	4	2
-4	__DU0SetSensorLight_inline_findDumpsite	5	1	16	4	2
-5	__signed_stack_001closeClaw	6	1	20	4	2
-6	__ResetSensorMutex	9	0	24	4	4
-7	__D0SetSensorLight_inline_findDumpsite	6	1	28	4	3
-8	__signed_stack_001getTrash	6	1	32	4	2
-9	__rotateMutex2	9	0	36	4	4
-10	__D0closeClaw	6	1	40	4	2
-11	__D0findDumpsite	6	1	44	4	13
-12	__DU0dropOff	5	1	48	4	2
-13	__signed_stack_001openClaw	6	1	52	4	2
-14	__D0getTrash	6	1	56	4	3
-15	__rotate_angle2	6	1	60	4	6
-16	__DU0findDumpsite	5	1	64	4	2
-17	__rotate_RotCount2	4	1	68	2	4
-18	__rotate_OldRotCount2	4	1	70	2	2
-19	__findDumpsite_7qG2_THRESHOLD_7qG2_000	4	1	72	2	3
-20	__zfgetTrash	1	1	74	1	3
-21	__zffindDumpsite	1	1	75	1	9
-22	__zfSetSensorLight_inline_findDumpsite	1	1	76	1	2
-23	__zfmain	1	1	77	1	2
-24	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	78	1	2
-25	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	79	1	2
-26	__SetSensorLight_7qG2_bActive_7qG2_000_inline_findDumpsite	1	1	80	1	2
-27	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	81	1	2
-28	__dropOff_return	1	1	82	1	3
-29	____initialize_global_data_return	1	1	83	1	3
-30	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	84	1	2
-31	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	85	1	2
-32	__SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite	1	1	86	1	4
-33	__openClaw_return	1	1	87	1	3
-34	__constValNeg45	2	0	88	1	1
-35	__closeClaw_return	1	1	89	1	3
-36	__constVal96	2	0	90	1	6
-37	__SetSensorTouch_7qG2_port_7qG2_000_inline_getTrash	1	1	91	1	4
-38	__findDumpsite_return	1	1	92	1	4
-39	__constVal63	2	0	93	1	4
-40	__getTrash_return	1	1	94	1	3
-41	__rotate_theRVP2	1	1	95	1	3
-42	__rotate_theRS2	1	1	96	1	3
-43	__rotate_theRM2	1	1	97	1	4
-44	__rotate_theRVI2	1	1	98	1	3
-45	__rotate_thePower2	2	1	99	1	4
-46	__rotate_rs2	1	1	100	1	2
-47	__rotate_theRVD2	1	1	101	1	3
-48	__rotate_theOM2	1	1	102	1	7
-49	__rotate_firstPort2	1	1	103	1	5
-50	__rotate_power2	1	1	104	1	5
-51	__OnRev_Tmp	2	1	105	1	2
-52	__rotate_sync2	1	1	106	1	3
-53	__rotate_theUF2	1	1	107	1	6
-54	__rotate_turnpct2	2	1	108	1	4
-55	__rotate_stop2	1	1	109	1	3
-56	__rotate_theTurnPct2	2	1	110	1	4
-57	__constVal15	2	0	111	1	1
-58	____ResetSensorSubroutine_return	1	1	112	1	4
-59	__ResetSensorTmp	1	1	113	1	2
-60	__constVal2	2	0	114	1	2
-61	__zfdropOff	1	1	115	1	2
-62	__constVal75	2	0	116	1	1
-63	__PFTmp	1	1	117	1	1
-64	__ResetSensorPort	1	1	118	1	4
-65	__constVal0	2	1	119	1	23
-66	__constVal1	2	0	120	1	8
-67	__constVal32	2	0	121	1	18
-68	__constVal50	2	0	122	1	1
-69	____RotateMotor2_sign_tmp	2	1	123	1	4
-70	__constVal3	2	0	124	1	7
-71	____RotateMotor2_return	1	1	125	1	4
-72	__OUT_AB	7	0	126	4	2
-73	__OUT_AB.__OUT_AB_type	1	0	0	1	0
-74	__rotate_ports2	7	0	128	4	7
-75	__rotate_ports2.__rotate_ports2_type	1	0	0	1	0
+0	__DU0SetSensorLight_inline_findDumpsite	5	1	0	4	2
+1	__D0SetSensorLowspeed_inline_avoid	6	1	4	4	3
+2	__DU0SetSensorLowspeed_inline_avoid	5	1	8	4	2
+3	__DU0main	5	1	12	4	2
+4	__D0openClaw	6	1	16	4	2
+5	__D0SetSensorLight_inline_findDumpsite	6	1	20	4	3
+6	__signed_stack_001findDumpsite	6	1	24	4	6
+7	__signed_stack_001getTrash	6	1	28	4	2
+8	__signed_stack_001openClaw	6	1	32	4	2
+9	__rotate_theAngle2	5	1	36	4	2
+10	__signed_stack_001avoid	6	1	40	4	4
+11	__signed_stack_001closeClaw	6	1	44	4	2
+12	__D0main	6	1	48	4	4
+13	__DU0dropOff	5	1	52	4	2
+14	__CLSRMutex1	9	0	56	4	2
+15	__CLSWMutex1	9	0	60	4	2
+16	__D0avoid	6	1	64	4	7
+17	__RLSBmutex1	9	0	68	4	2
+18	__D0closeClaw	6	1	72	4	2
+19	__D0getTrash	6	1	76	4	3
+20	__DU0getTrash	5	1	80	4	2
+21	__ResetSensorMutex	9	0	84	4	6
+22	__D0findDumpsite	6	1	88	4	13
+23	__CLSCSMutex1	9	0	92	4	2
+24	__DU0findDumpsite	5	1	96	4	2
+25	__rotate_angle2	6	1	100	4	6
+26	__rotateMutex2	9	0	104	4	4
+27	__rotate_theAngle0	5	1	108	4	2
+28	__rotate_angle0	6	1	112	4	5
+29	__rotate_OldRotCount2	4	1	116	2	2
+30	__findDumpsite_7qG2_THRESHOLD_7qG2_000	4	1	118	2	3
+31	__rotate_RotCount2	4	1	120	2	4
+32	__rotate_RotCount0	4	1	122	2	4
+33	__rotate_OldRotCount0	4	1	124	2	2
+34	__avoid_7qG2_THRESHOLD_7qG2_000	4	1	126	2	2
+35	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	128	1	2
+36	__zffindDumpsite	1	1	129	1	9
+37	__SetSensorLight_7qG2_bActive_7qG2_000_inline_findDumpsite	1	1	130	1	2
+38	__SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite	1	1	131	1	4
+39	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	132	1	2
+40	__zfgetTrash	1	1	133	1	3
+41	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	134	1	2
+42	__constVal75	2	0	135	1	1
+43	____initialize_global_data_return	1	1	136	1	3
+44	__constVal2	2	0	137	1	2
+45	__PFTmp	1	1	138	1	1
+46	__dropOff_return	1	1	139	1	3
+47	__zfdropOff	1	1	140	1	2
+48	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	141	1	2
+49	__zfavoid	1	1	142	1	3
+50	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	143	1	2
+51	__closeClaw_return	1	1	144	1	3
+52	__constVal96	2	0	145	1	8
+53	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_avoid	1	1	146	1	2
+54	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_avoid	1	1	147	1	2
+55	__openClaw_return	1	1	148	1	3
+56	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_avoid	1	1	149	1	4
+57	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_avoid	1	1	150	1	2
+58	__constValNeg45	2	0	151	1	1
+59	__avoid_return	1	1	152	1	4
+60	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_avoid	1	1	153	1	2
+61	__zfmain	1	1	154	1	4
+62	__getTrash_return	1	1	155	1	4
+63	__findDumpsite_return	1	1	156	1	4
+64	__SetSensorTouch_7qG2_port_7qG2_000_inline_getTrash	1	1	157	1	4
+65	__constVal63	2	0	158	1	5
+66	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_avoid	1	1	159	1	2
+67	__zfSetSensorLowspeed_inline_avoid	1	1	160	1	2
+68	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_avoid	1	1	161	1	2
+69	__zfSetSensorLight_inline_findDumpsite	1	1	162	1	2
+70	__rotate_firstPort2	1	1	163	1	5
+71	__rotate_sync2	1	1	164	1	3
+72	__rotate_stop2	1	1	165	1	3
+73	__rotate_thePower0	2	1	166	1	4
+74	__rotate_theTurnPct0	2	1	167	1	4
+75	__rotate_power2	1	1	168	1	5
+76	__rotate_turnpct2	2	1	169	1	4
+77	__rotate_theRS2	1	1	170	1	3
+78	__rotate_theRVP2	1	1	171	1	3
+79	__rotate_theRVI2	1	1	172	1	3
+80	__rotate_theUF2	1	1	173	1	6
+81	__rotate_theOM2	1	1	174	1	7
+82	__rotate_theRM2	1	1	175	1	4
+83	__rotate_rs0	1	1	176	1	2
+84	__rotate_sync0	1	1	177	1	2
+85	__rotate_stop0	1	1	178	1	2
+86	__rotate_turnpct0	2	1	179	1	3
+87	__OnRev_Tmp	2	1	180	1	2
+88	__rotate_power0	1	1	181	1	4
+89	__rotate_firstPort0	1	1	182	1	5
+90	__rotate_theUF0	1	1	183	1	6
+91	__rotate_theRVP0	1	1	184	1	2
+92	__rotate_theRVI0	1	1	185	1	2
+93	__rotate_theRVD0	1	1	186	1	2
+94	__rotate_theOM0	1	1	187	1	7
+95	__rotate_theRM0	1	1	188	1	4
+96	__rotate_theRS0	1	1	189	1	3
+97	__ResetSensorPort	1	1	190	1	5
+98	__ResetSensorTmp	1	1	191	1	2
+99	__constVal3	2	0	192	1	8
+100	____RotateMotor2_return	1	1	193	1	4
+101	____RotateMotor2_sign_tmp	2	1	194	1	4
+102	____ResetSensorSubroutine_return	1	1	195	1	5
+103	__RLSBytesCount1	1	1	196	1	7
+104	__RLSBIterations1	1	1	197	1	4
+105	__RLSBResult1	2	1	198	1	7
+106	__constVal15	2	0	199	1	3
+107	____ReadLSBytes1_return	1	1	200	1	3
+108	__rotate_thePower2	2	1	201	1	4
+109	____RotateMotor0_sign_tmp	2	1	202	1	4
+110	__rotate_theRVD2	1	1	203	1	3
+111	____RotateMotor0_return	1	1	204	1	3
+112	__rotate_theTurnPct2	2	1	205	1	4
+113	__constVal50	2	0	206	1	2
+114	__rotate_rs2	1	1	207	1	2
+115	__constVal0	2	1	208	1	35
+116	__constVal32	2	0	209	1	25
+117	__constVal1	2	0	210	1	13
+118	__CLSWArgs1	8	0	4	12	5
+119	__CLSWArgs1.Result	2	1	212	1	5
+120	__CLSWArgs1.Port	1	1	213	1	5
+121	__CLSWArgs1.Buffer	7	0	214	4	5
+122	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+123	__CLSWArgs1.ReturnLen	1	1	216	1	5
+124	__CLSCSArgs1	8	0	3	4	4
+125	__CLSCSArgs1.Result	2	1	220	1	4
+126	__CLSCSArgs1.Port	1	1	221	1	4
+127	__CLSCSArgs1.BytesReady	1	1	222	1	4
+128	__CLSRArgs1	8	0	4	12	5
+129	__CLSRArgs1.Result	2	1	224	1	5
+130	__CLSRArgs1.Port	1	1	225	1	5
+131	__CLSRArgs1.Buffer	7	0	226	4	5
+132	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+133	__CLSRArgs1.BufferLen	1	1	228	1	5
+134	__OUT_AB	7	0	230	4	3
+135	__OUT_AB.__OUT_AB_type	1	0	0	1	0
+136	__RLSReadBuf1	7	0	232	4	8
+137	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+138	__rotate_ports0	7	0	234	4	6
+139	__rotate_ports0.__rotate_ports0_type	1	0	0	1	0
+140	__rotate_ports2	7	0	236	4	7
+141	__rotate_ports2.__rotate_ports2_type	1	0	0	1	0
+142	__RLSBbufLSWrite1	7	0	238	4	1
+143	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+144	__RLSLastGoodRead1	7	0	240	4	2
+145	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	66	0	#line 66 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	67	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	66	2	#line 66 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	66	2	#line 66 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	67	2		set __D0main, 1
-0	67	5	#line 67 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	68	5		tst 5, __zfmain, __D0main
-0	67	8	#line 67 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	68	8		brtst 4, __NXC_Label_540, __zfmain
-0	67	11	#line 67 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	68	11		set __D0main, 75
-0	69	14	#line 69 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	70	14	#pragma macro 7
-0	70	14		setout __OUT_AB, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4302	37	#line 4302 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	69	37	#line 69 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	70	37	#line 70 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	71	37		subcall getTrash, __getTrash_return
-0	70	39	#line 70 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	71	39	#line 71 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	72	39		subcall dropOff, __dropOff_return
-0	71	41	#line 71 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	76	41	#line 76 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	77	41		jmp __NXC_Label_539
-0	76	43	#line 76 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	77	43		exit -1, -1
-1	4582	0		brtst 4, __rotate_Done2, __rotate_angle2
-1	4583	3		set ____RotateMotor2_sign_tmp, 0
-1	4583	6		brtst EQ, __sign_2, __rotate_angle2
-1	4583	9		set ____RotateMotor2_sign_tmp, -1
-1	4583	12		brtst LT, __sign_2, __rotate_angle2
-1	4583	15		set ____RotateMotor2_sign_tmp, 1
-1	4583	18	__sign_2:	mov __rotate_thePower2, ____RotateMotor2_sign_tmp
-1	4584	20		abs __rotate_theAngle2, __rotate_angle2
-1	4585	23		mul __rotate_thePower2, __rotate_thePower2, __rotate_power2
-1	4587	27		set __rotate_theUF2, 23
-1	4588	30		brtst 4, __rotate_NoSync2, __rotate_sync2
-1	4589	33		set __rotate_theOM2, 7
-1	4590	36		set __rotate_theRM2, 2
-1	4591	39		mov __rotate_theTurnPct2, __rotate_turnpct2
-1	4592	41		brtst 4, __rotate_Start2, __rotate_theTurnPct2
-1	4593	44		add __rotate_theUF2, __rotate_theUF2, __constVal32
-1	4594	48		jmp __rotate_Start2
-1	4596	50		set __rotate_theOM2, 3
-1	4597	53		set __rotate_theRM2, 0
-1	4598	56		set __rotate_theTurnPct2, 0
-1	4600	59		set __rotate_theRS2, 32
-1	4601	62		setout __rotate_ports2, 1, __rotate_theOM2, 8, __rotate_theRM2, 5, __rotate_theAngle2, 6, __rotate_theRS2, 10, __rotate_theRVP2, 11, __rotate_theRVI2, 12, __rotate_theRVD2, 2, __rotate_thePower2, 7, __rotate_turnpct2, 0, __rotate_theUF2
-1	4604	85		index __rotate_firstPort2, __rotate_ports2, 65535
-1	4606	89		getout __rotate_power2, __rotate_firstPort2, 2
-1	4607	93		brtst 4, __rotate_doneRunning2, __rotate_power2
-1	4608	96		getout __rotate_rs2, __rotate_firstPort2, 6
-1	4609	100		brcmp 4, __rotate_Running2, __rotate_rs2, __constVal32
-1	4611	104		brtst 4, __rotate_Reset2, __rotate_stop2
-1	4613	107		set __rotate_theOM2, 7
-1	4614	110		set __rotate_theUF2, 7
-1	4615	113		setout __rotate_ports2, 1, __rotate_theOM2, 8, __constVal1, 6, __rotate_theRS2, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF2
-1	4617	128		getout __rotate_RotCount2, __rotate_firstPort2, 14
-1	4619	132		mov __rotate_OldRotCount2, __rotate_RotCount2
-1	4620	134		wait2 NA, __constVal50
-1	4622	137		getout __rotate_RotCount2, __rotate_firstPort2, 14
-1	4623	141		brcmp 5, __rotate_Stabilize2, __rotate_OldRotCount2, __rotate_RotCount2
-1	4624	145		set __rotate_theOM2, 4
-1	4625	148		setout __rotate_ports2, 8, __rotate_theRM2, 6, __constVal0, 1, __rotate_theOM2, 0, __constVal1
-1	4628	159		brtst 4, __rotate_Done2, __rotate_theTurnPct2
-1	4629	162		setout __rotate_ports2, 0, __constVal32
-1	4631	167		subret ____RotateMotor2_return
-2	4885	0		setin __constVal1, __ResetSensorPort, 5
-2	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
-2	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
-2	4889	11		subret ____ResetSensorSubroutine_return
-3	2	0	#line 2 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-3	3	0		set __signed_stack_001closeClaw, 25
-3	2	3	#line 2 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-3	2	3	#line 2 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-3	3	3		set __D0closeClaw, 45
-3	3	6	#line 3 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-3	4	6	#pragma macro 33
-3	4	6		acquire __rotateMutex2
-3	4	7		arrbuild __rotate_ports2, __constVal2
-3	4	11		mov __rotate_power2, __signed_stack_001closeClaw
-3	4	13		mov __rotate_angle2, __D0closeClaw
-3	4	15		mov __rotate_turnpct2, __constVal0
-3	4	17		mov __rotate_sync2, __constVal0
-3	4	19		mov __rotate_stop2, __constVal1
-3	4	21		mov __rotate_theRVP2, __constVal32
-3	4	23		mov __rotate_theRVI2, __constVal0
-3	4	25		mov __rotate_theRVD2, __constVal96
-3	4	27		subcall __RotateMotor2, ____RotateMotor2_return
-3	4	29		release __rotateMutex2
-3	3865	30	#line 3865 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-3	3	30	#line 3 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-3	5	30	#line 5 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-3	6	30		subret __closeClaw_return
-4	7	0	#line 7 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-4	8	0		set __signed_stack_001openClaw, 25
-4	7	3	#line 7 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-4	7	3	#line 7 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-4	8	3		mov __D0openClaw, __constValNeg45
-4	8	5	#line 8 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-4	9	5	#pragma macro 33
-4	9	5		acquire __rotateMutex2
-4	9	6		arrbuild __rotate_ports2, __constVal2
-4	9	10		mov __rotate_power2, __signed_stack_001openClaw
-4	9	12		mov __rotate_angle2, __D0openClaw
-4	9	14		mov __rotate_turnpct2, __constVal0
-4	9	16		mov __rotate_sync2, __constVal0
-4	9	18		mov __rotate_stop2, __constVal1
-4	9	20		mov __rotate_theRVP2, __constVal32
-4	9	22		mov __rotate_theRVI2, __constVal0
-4	9	24		mov __rotate_theRVD2, __constVal96
-4	9	26		subcall __RotateMotor2, ____RotateMotor2_return
-4	9	28		release __rotateMutex2
-4	3883	29	#line 3883 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-4	8	29	#line 8 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-4	10	29	#line 10 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-4	11	29		subret __openClaw_return
-5	24	0	#line 24 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-5	25	0		set __SetSensorTouch_7qG2_port_7qG2_000_inline_getTrash, 0
-5	24	3	#line 24 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-5	3718	3	#line 3718 "NXCDefs.h"
-5	3719	3	#pragma macro 6
-5	3719	3		setin __constVal1, __SetSensorTouch_7qG2_port_7qG2_000_inline_getTrash, 0
-5	3719	7		setin __constVal32, __SetSensorTouch_7qG2_port_7qG2_000_inline_getTrash, 1
-5	3719	11		acquire __ResetSensorMutex
-5	3719	12		mov __ResetSensorPort, __SetSensorTouch_7qG2_port_7qG2_000_inline_getTrash
-5	3719	14		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-5	3719	16		release __ResetSensorMutex
-5	4043	17	#line 4043 "NXCDefs.h"
-5	3718	17	#line 3718 "NXCDefs.h"
-5	25	17	#line 25 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-5	25	17	#line 25 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-5	26	17		getin __signed_stack_001getTrash, __constVal0, 4
-5	25	21	#line 25 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-5	25	21	#line 25 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-5	26	21		set __D0getTrash, 1
-5	25	24	#line 25 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-5	26	24		cmp 4, __zfgetTrash, __signed_stack_001getTrash, __D0getTrash
-5	25	28	#line 25 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-5	26	28		mov __D0getTrash, __zfgetTrash
-5	26	30	#line 26 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-5	27	30		brtst 4, __NXC_Label_512, __zfgetTrash
-5	27	33	#line 27 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-5	28	33		subcall closeClaw, __closeClaw_return
-5	27	35	#line 27 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-5	30	35	#line 30 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-5	30	35	#line 30 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-5	31	35		subret __getTrash_return
-6	36	0	#line 36 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	37	0		set __findDumpsite_7qG2_THRESHOLD_7qG2_000, 50
-6	36	3	#line 36 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	36	3	#line 36 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	37	3		set __SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite, 3
-6	36	6	#line 36 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	37	6	#line 37 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	38	6		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_findDumpsite, __constVal1
-6	3729	8	#line 3729 "NXCDefs.h"
-6	3730	8		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite
-6	3729	10	#line 3729 "NXCDefs.h"
-6	3729	10	#line 3729 "NXCDefs.h"
-6	3730	10		mov __DU0SetSensorLight_inline_findDumpsite, __SetSensorLight_7qG2_bActive_7qG2_000_inline_findDumpsite
-6	3729	12	#line 3729 "NXCDefs.h"
-6	3730	12		tst 5, __zfSetSensorLight_inline_findDumpsite, __DU0SetSensorLight_inline_findDumpsite
-6	3729	15	#line 3729 "NXCDefs.h"
-6	3730	15		brtst 4, __001__NXC_Label_4, __zfSetSensorLight_inline_findDumpsite
-6	3729	18	#line 3729 "NXCDefs.h"
-6	3730	18		set __D0SetSensorLight_inline_findDumpsite, 5
-6	3729	21	#line 3729 "NXCDefs.h"
-6	3730	21		jmp __001__NXC_Label_5
-6	3729	23	#line 3729 "NXCDefs.h"
-6	3730	23		set __D0SetSensorLight_inline_findDumpsite, 6
-6	3729	26	#line 3729 "NXCDefs.h"
-6	3730	26		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __D0SetSensorLight_inline_findDumpsite
-6	3663	28	#line 3663 "NXCDefs.h"
-6	3664	28		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, 0
-6	3663	32	#line 3663 "NXCDefs.h"
-6	3730	32	#line 3730 "NXCDefs.h"
-6	3730	32	#line 3730 "NXCDefs.h"
-6	3731	32		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite
-6	3730	34	#line 3730 "NXCDefs.h"
-6	3730	34	#line 3730 "NXCDefs.h"
-6	3731	34		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_findDumpsite, 128
-6	3730	37	#line 3730 "NXCDefs.h"
-6	3676	37	#line 3676 "NXCDefs.h"
-6	3677	37		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, 1
-6	3676	41	#line 3676 "NXCDefs.h"
-6	3731	41	#line 3731 "NXCDefs.h"
-6	3731	41	#line 3731 "NXCDefs.h"
-6	3732	41		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite
-6	3731	43	#line 3731 "NXCDefs.h"
-6	3694	43	#line 3694 "NXCDefs.h"
-6	3695	43	#pragma macro 4
-6	3695	43		acquire __ResetSensorMutex
-6	3695	44		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite
-6	3695	46		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-6	3695	48		release __ResetSensorMutex
-6	4171	49	#line 4171 "NXCDefs.h"
-6	3694	49	#line 3694 "NXCDefs.h"
-6	3732	49	#line 3732 "NXCDefs.h"
-6	37	49	#line 37 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	37	49	#line 37 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	38	49		getin __signed_stack_001findDumpsite, __constVal3, 4
-6	37	53	#line 37 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	37	53	#line 37 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	38	53		mov __D0findDumpsite, __findDumpsite_7qG2_THRESHOLD_7qG2_000
-6	37	55	#line 37 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	38	55		cmp 0, __zffindDumpsite, __signed_stack_001findDumpsite, __D0findDumpsite
-6	37	59	#line 37 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	38	59		mov __D0findDumpsite, __zffindDumpsite
-6	38	61	#line 38 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	39	61		brtst 4, __NXC_Label_518, __zffindDumpsite
-6	38	64	#line 38 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	39	64		set __D0findDumpsite, 75
-6	39	67	#line 39 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	40	67	#pragma macro 7
-6	40	67		setout __constVal0, 2, __D0findDumpsite, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-6	4195	90	#line 4195 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	39	90	#line 39 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	39	90	#line 39 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	40	90	#line 40 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	41	90	#pragma macro 10
-6	41	90		neg __OnRev_Tmp, __constVal75
-6	41	93		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-6	4202	116	#line 4202 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	40	116	#line 40 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	41	116	#line 41 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	42	116		jmp __NXC_Label_517
-6	41	118	#line 41 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	41	118	#line 41 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	42	118		getin __signed_stack_001findDumpsite, __constVal3, 4
-6	41	122	#line 41 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	41	122	#line 41 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	42	122		mov __D0findDumpsite, __findDumpsite_7qG2_THRESHOLD_7qG2_000
-6	41	124	#line 41 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	42	124		cmp 1, __zffindDumpsite, __signed_stack_001findDumpsite, __D0findDumpsite
-6	41	128	#line 41 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	42	128		mov __D0findDumpsite, __zffindDumpsite
-6	42	130	#line 42 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	43	130		brtst 4, __NXC_Label_526, __zffindDumpsite
-6	42	133	#line 42 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	43	133		set __D0findDumpsite, 75
-6	43	136	#line 43 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	44	136	#pragma macro 7
-6	44	136		setout __OUT_AB, 2, __D0findDumpsite, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-6	4228	159	#line 4228 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	43	159	#line 43 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	43	159	#line 43 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	44	159		getin __signed_stack_001findDumpsite, __constVal3, 4
-6	43	163	#line 43 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	43	163	#line 43 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	44	163		set __D0findDumpsite, 90
-6	43	166	#line 43 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	44	166		cmp 1, __zffindDumpsite, __signed_stack_001findDumpsite, __D0findDumpsite
-6	43	170	#line 43 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	44	170		mov __D0findDumpsite, __zffindDumpsite
-6	44	172	#line 44 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	45	172		brtst 4, __NXC_Label_533, __zffindDumpsite
-6	45	175	#line 45 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	46	175		set __DU0findDumpsite, 1
-6	45	178	#line 45 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	45	178	#line 45 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	46	178		subret __findDumpsite_return
-6	45	180	#line 45 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	49	180	#line 49 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	51	180	#line 51 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	52	180		jmp __NXC_Label_525
-6	51	182	#line 51 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	51	182	#line 51 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-6	52	182		subret __findDumpsite_return
-7	52	0	#line 52 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-7	53	0		subcall findDumpsite, __findDumpsite_return
-7	52	2	#line 52 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-7	53	2		mov __DU0dropOff, __DU0findDumpsite
-7	53	4	#line 53 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-7	54	4		tst 5, __zfdropOff, __DU0dropOff
-7	53	7	#line 53 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-7	54	7		brtst 4, __NXC_Label_538, __zfdropOff
-7	54	10	#line 54 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-7	55	10		subcall openClaw, __openClaw_return
-7	54	12	#line 54 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-7	58	12	#line 58 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-7	58	12	#line 58 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-7	59	12		subret __dropOff_return
-8	77	0	#line 77 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-8	78	0		subret ____initialize_global_data_return
+0	62	0	#line 62 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	63	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	62	2	#line 62 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	62	2	#line 62 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	63	2		set __D0main, 1
+0	63	5	#line 63 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	64	5		tst 5, __zfmain, __D0main
+0	63	8	#line 63 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	64	8		brtst 4, __NXC_Label_542, __zfmain
+0	63	11	#line 63 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	64	11		set __D0main, 75
+0	64	14	#line 64 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	65	14	#pragma macro 7
+0	65	14		setout __OUT_AB, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4314	37	#line 4314 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	64	37	#line 64 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	65	37	#line 65 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	66	37		subcall avoid, __avoid_return
+0	65	39	#line 65 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	65	39	#line 65 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	66	39		subcall getTrash, __getTrash_return
+0	65	41	#line 65 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	66	41		mov __DU0main, __DU0getTrash
+0	66	43	#line 66 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	67	43		tst 5, __zfmain, __DU0main
+0	66	46	#line 66 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	67	46		brtst 4, __NXC_Label_549, __zfmain
+0	67	49	#line 67 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	68	49		subcall dropOff, __dropOff_return
+0	67	51	#line 67 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	81	51	#line 81 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	85	51	#line 85 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	86	51		jmp __NXC_Label_541
+0	85	53	#line 85 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	86	53		exit -1, -1
+1	4476	0		brtst 4, __rotate_Done0, __rotate_angle0
+1	4477	3		set ____RotateMotor0_sign_tmp, 0
+1	4477	6		brtst EQ, __sign_0, __rotate_angle0
+1	4477	9		set ____RotateMotor0_sign_tmp, -1
+1	4477	12		brtst LT, __sign_0, __rotate_angle0
+1	4477	15		set ____RotateMotor0_sign_tmp, 1
+1	4477	18	__sign_0:	mov __rotate_thePower0, ____RotateMotor0_sign_tmp
+1	4478	20		abs __rotate_theAngle0, __rotate_angle0
+1	4479	23		mul __rotate_thePower0, __rotate_thePower0, __rotate_power0
+1	4481	27		set __rotate_theUF0, 23
+1	4482	30		brtst 4, __rotate_NoSync0, __rotate_sync0
+1	4483	33		set __rotate_theOM0, 7
+1	4484	36		set __rotate_theRM0, 2
+1	4485	39		mov __rotate_theTurnPct0, __rotate_turnpct0
+1	4486	41		brtst 4, __rotate_Start0, __rotate_theTurnPct0
+1	4487	44		add __rotate_theUF0, __rotate_theUF0, __constVal32
+1	4488	48		jmp __rotate_Start0
+1	4490	50		set __rotate_theOM0, 3
+1	4491	53		set __rotate_theRM0, 0
+1	4492	56		set __rotate_theTurnPct0, 0
+1	4494	59		set __rotate_theRS0, 32
+1	4495	62		setout __rotate_ports0, 1, __rotate_theOM0, 8, __rotate_theRM0, 5, __rotate_theAngle0, 6, __rotate_theRS0, 10, __rotate_theRVP0, 11, __rotate_theRVI0, 12, __rotate_theRVD0, 2, __rotate_thePower0, 7, __rotate_turnpct0, 0, __rotate_theUF0
+1	4498	85		index __rotate_firstPort0, __rotate_ports0, 65535
+1	4500	89		getout __rotate_power0, __rotate_firstPort0, 2
+1	4501	93		brtst 4, __rotate_doneRunning0, __rotate_power0
+1	4502	96		getout __rotate_rs0, __rotate_firstPort0, 6
+1	4503	100		brcmp 4, __rotate_Running0, __rotate_rs0, __constVal32
+1	4505	104		brtst 4, __rotate_Reset0, __rotate_stop0
+1	4507	107		set __rotate_theOM0, 7
+1	4508	110		set __rotate_theUF0, 7
+1	4509	113		setout __rotate_ports0, 1, __rotate_theOM0, 8, __constVal1, 6, __rotate_theRS0, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF0
+1	4511	128		getout __rotate_RotCount0, __rotate_firstPort0, 14
+1	4513	132		mov __rotate_OldRotCount0, __rotate_RotCount0
+1	4514	134		wait2 NA, __constVal50
+1	4516	137		getout __rotate_RotCount0, __rotate_firstPort0, 14
+1	4517	141		brcmp 5, __rotate_Stabilize0, __rotate_OldRotCount0, __rotate_RotCount0
+1	4518	145		set __rotate_theOM0, 4
+1	4519	148		setout __rotate_ports0, 8, __rotate_theRM0, 6, __constVal0, 1, __rotate_theOM0, 0, __constVal1
+1	4522	159		brtst 4, __rotate_Done0, __rotate_theTurnPct0
+1	4523	162		setout __rotate_ports0, 0, __constVal32
+1	4525	167		subret ____RotateMotor0_return
+2	4582	0		brtst 4, __rotate_Done2, __rotate_angle2
+2	4583	3		set ____RotateMotor2_sign_tmp, 0
+2	4583	6		brtst EQ, __sign_2, __rotate_angle2
+2	4583	9		set ____RotateMotor2_sign_tmp, -1
+2	4583	12		brtst LT, __sign_2, __rotate_angle2
+2	4583	15		set ____RotateMotor2_sign_tmp, 1
+2	4583	18	__sign_2:	mov __rotate_thePower2, ____RotateMotor2_sign_tmp
+2	4584	20		abs __rotate_theAngle2, __rotate_angle2
+2	4585	23		mul __rotate_thePower2, __rotate_thePower2, __rotate_power2
+2	4587	27		set __rotate_theUF2, 23
+2	4588	30		brtst 4, __rotate_NoSync2, __rotate_sync2
+2	4589	33		set __rotate_theOM2, 7
+2	4590	36		set __rotate_theRM2, 2
+2	4591	39		mov __rotate_theTurnPct2, __rotate_turnpct2
+2	4592	41		brtst 4, __rotate_Start2, __rotate_theTurnPct2
+2	4593	44		add __rotate_theUF2, __rotate_theUF2, __constVal32
+2	4594	48		jmp __rotate_Start2
+2	4596	50		set __rotate_theOM2, 3
+2	4597	53		set __rotate_theRM2, 0
+2	4598	56		set __rotate_theTurnPct2, 0
+2	4600	59		set __rotate_theRS2, 32
+2	4601	62		setout __rotate_ports2, 1, __rotate_theOM2, 8, __rotate_theRM2, 5, __rotate_theAngle2, 6, __rotate_theRS2, 10, __rotate_theRVP2, 11, __rotate_theRVI2, 12, __rotate_theRVD2, 2, __rotate_thePower2, 7, __rotate_turnpct2, 0, __rotate_theUF2
+2	4604	85		index __rotate_firstPort2, __rotate_ports2, 65535
+2	4606	89		getout __rotate_power2, __rotate_firstPort2, 2
+2	4607	93		brtst 4, __rotate_doneRunning2, __rotate_power2
+2	4608	96		getout __rotate_rs2, __rotate_firstPort2, 6
+2	4609	100		brcmp 4, __rotate_Running2, __rotate_rs2, __constVal32
+2	4611	104		brtst 4, __rotate_Reset2, __rotate_stop2
+2	4613	107		set __rotate_theOM2, 7
+2	4614	110		set __rotate_theUF2, 7
+2	4615	113		setout __rotate_ports2, 1, __rotate_theOM2, 8, __constVal1, 6, __rotate_theRS2, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF2
+2	4617	128		getout __rotate_RotCount2, __rotate_firstPort2, 14
+2	4619	132		mov __rotate_OldRotCount2, __rotate_RotCount2
+2	4620	134		wait2 NA, __constVal50
+2	4622	137		getout __rotate_RotCount2, __rotate_firstPort2, 14
+2	4623	141		brcmp 5, __rotate_Stabilize2, __rotate_OldRotCount2, __rotate_RotCount2
+2	4624	145		set __rotate_theOM2, 4
+2	4625	148		setout __rotate_ports2, 8, __rotate_theRM2, 6, __constVal0, 1, __rotate_theOM2, 0, __constVal1
+2	4628	159		brtst 4, __rotate_Done2, __rotate_theTurnPct2
+2	4629	162		setout __rotate_ports2, 0, __constVal32
+2	4631	167		subret ____RotateMotor2_return
+3	4885	0		setin __constVal1, __ResetSensorPort, 5
+3	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+3	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+3	4889	11		subret ____ResetSensorSubroutine_return
+4	5710	0	#pragma macro 25
+4	5710	0		acquire __CLSWMutex1
+4	5710	1		set __CLSWArgs1.Port, 1
+4	5710	4		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
+4	5710	6		mov __CLSWArgs1.Buffer, __RLSReadBuf1
+4	5710	8		syscall 21, __CLSWArgs1
+4	5710	11		mov __RLSBResult1, __CLSWArgs1.Result
+4	5710	13		release __CLSWMutex1
+4	5710	14	#line 5710 "NXTDefs.h"
+4	5711	14		brtst 4, __RLSBReturn1, __RLSBytesCount1
+4	5712	17		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
+4	5713	21		brtst 5, __RLSBError1, __RLSBResult1
+4	5714	24		set __RLSBIterations1, 4
+4	5716	27	#pragma macro 23
+4	5716	27		acquire __CLSCSMutex1
+4	5716	28		set __CLSCSArgs1.Port, 1
+4	5716	31		syscall 23, __CLSCSArgs1
+4	5716	34		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
+4	5716	36		mov __RLSBResult1, __CLSCSArgs1.Result
+4	5716	38		release __CLSCSMutex1
+4	5716	39	#line 5716 "NXTDefs.h"
+4	5717	39		sub __RLSBIterations1, __RLSBIterations1, __constVal1
+4	5718	43		brtst 2, __RLSBError1, __RLSBIterations1
+4	5719	46		brtst 0, __RLSBError1, __RLSBResult1
+4	5720	49		brtst 4, __RLSBReadyToRead1, __RLSBResult1
+4	5722	52		wait2 NA, __constVal15
+4	5723	55		jmp __RLSBDoCheckStatus1
+4	5726	57	#pragma macro 25
+4	5726	57		acquire __CLSRMutex1
+4	5726	58		set __CLSRArgs1.Port, 1
+4	5726	61		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
+4	5726	63		syscall 22, __CLSRArgs1
+4	5726	66		mov __RLSReadBuf1, __CLSRArgs1.Buffer
+4	5726	68		mov __RLSBResult1, __CLSRArgs1.Result
+4	5726	70		release __CLSRMutex1
+4	5726	71	#line 5726 "NXTDefs.h"
+4	5727	71		brtst 5, __RLSBError1, __RLSBResult1
+4	5728	74		mov __RLSLastGoodRead1, __RLSReadBuf1
+4	5729	76		jmp __RLSBDone1
+4	5731	78		mov __RLSReadBuf1, __RLSLastGoodRead1
+4	5733	80		arrsize __RLSBytesCount1, __RLSReadBuf1
+4	5735	83		subret ____ReadLSBytes1_return
+5	2	0	#line 2 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+5	3	0		set __signed_stack_001closeClaw, 25
+5	2	3	#line 2 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+5	2	3	#line 2 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+5	3	3		set __D0closeClaw, 45
+5	3	6	#line 3 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+5	4	6	#pragma macro 33
+5	4	6		acquire __rotateMutex2
+5	4	7		arrbuild __rotate_ports2, __constVal2
+5	4	11		mov __rotate_power2, __signed_stack_001closeClaw
+5	4	13		mov __rotate_angle2, __D0closeClaw
+5	4	15		mov __rotate_turnpct2, __constVal0
+5	4	17		mov __rotate_sync2, __constVal0
+5	4	19		mov __rotate_stop2, __constVal1
+5	4	21		mov __rotate_theRVP2, __constVal32
+5	4	23		mov __rotate_theRVI2, __constVal0
+5	4	25		mov __rotate_theRVD2, __constVal96
+5	4	27		subcall __RotateMotor2, ____RotateMotor2_return
+5	4	29		release __rotateMutex2
+5	3865	30	#line 3865 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+5	3	30	#line 3 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+5	5	30	#line 5 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+5	6	30		subret __closeClaw_return
+6	7	0	#line 7 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+6	8	0		set __signed_stack_001openClaw, 25
+6	7	3	#line 7 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+6	7	3	#line 7 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+6	8	3		mov __D0openClaw, __constValNeg45
+6	8	5	#line 8 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+6	9	5	#pragma macro 33
+6	9	5		acquire __rotateMutex2
+6	9	6		arrbuild __rotate_ports2, __constVal2
+6	9	10		mov __rotate_power2, __signed_stack_001openClaw
+6	9	12		mov __rotate_angle2, __D0openClaw
+6	9	14		mov __rotate_turnpct2, __constVal0
+6	9	16		mov __rotate_sync2, __constVal0
+6	9	18		mov __rotate_stop2, __constVal1
+6	9	20		mov __rotate_theRVP2, __constVal32
+6	9	22		mov __rotate_theRVI2, __constVal0
+6	9	24		mov __rotate_theRVD2, __constVal96
+6	9	26		subcall __RotateMotor2, ____RotateMotor2_return
+6	9	28		release __rotateMutex2
+6	3883	29	#line 3883 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+6	8	29	#line 8 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+6	10	29	#line 10 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+6	11	29		subret __openClaw_return
+7	14	0	#line 14 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	15	0		set __avoid_7qG2_THRESHOLD_7qG2_000, 30
+7	14	3	#line 14 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	14	3	#line 14 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	15	3		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_avoid, 1
+7	14	6	#line 14 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	15	6	#line 15 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	16	6		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_avoid, __constVal1
+7	3758	8	#line 3758 "NXCDefs.h"
+7	3759	8		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_avoid, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_avoid
+7	3758	10	#line 3758 "NXCDefs.h"
+7	3758	10	#line 3758 "NXCDefs.h"
+7	3759	10		mov __DU0SetSensorLowspeed_inline_avoid, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_avoid
+7	3758	12	#line 3758 "NXCDefs.h"
+7	3759	12		tst 5, __zfSetSensorLowspeed_inline_avoid, __DU0SetSensorLowspeed_inline_avoid
+7	3758	15	#line 3758 "NXCDefs.h"
+7	3759	15		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_avoid
+7	3758	18	#line 3758 "NXCDefs.h"
+7	3759	18		set __D0SetSensorLowspeed_inline_avoid, 11
+7	3758	21	#line 3758 "NXCDefs.h"
+7	3759	21		jmp __004__NXC_Label_37
+7	3758	23	#line 3758 "NXCDefs.h"
+7	3759	23		set __D0SetSensorLowspeed_inline_avoid, 10
+7	3758	26	#line 3758 "NXCDefs.h"
+7	3759	26		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_avoid, __D0SetSensorLowspeed_inline_avoid
+7	3663	28	#line 3663 "NXCDefs.h"
+7	3664	28		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_avoid, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_avoid, 0
+7	3663	32	#line 3663 "NXCDefs.h"
+7	3759	32	#line 3759 "NXCDefs.h"
+7	3759	32	#line 3759 "NXCDefs.h"
+7	3760	32		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_avoid, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_avoid
+7	3759	34	#line 3759 "NXCDefs.h"
+7	3759	34	#line 3759 "NXCDefs.h"
+7	3760	34		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_avoid, 0
+7	3759	37	#line 3759 "NXCDefs.h"
+7	3676	37	#line 3676 "NXCDefs.h"
+7	3677	37		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_avoid, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_avoid, 1
+7	3676	41	#line 3676 "NXCDefs.h"
+7	3760	41	#line 3760 "NXCDefs.h"
+7	3760	41	#line 3760 "NXCDefs.h"
+7	3761	41		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_avoid, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_avoid
+7	3760	43	#line 3760 "NXCDefs.h"
+7	3694	43	#line 3694 "NXCDefs.h"
+7	3695	43	#pragma macro 4
+7	3695	43		acquire __ResetSensorMutex
+7	3695	44		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_avoid
+7	3695	46		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+7	3695	48		release __ResetSensorMutex
+7	3991	49	#line 3991 "NXCDefs.h"
+7	3694	49	#line 3694 "NXCDefs.h"
+7	3761	49	#line 3761 "NXCDefs.h"
+7	15	49	#line 15 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	15	49	#line 15 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	16	49	#pragma macro 26
+7	16	49		acquire __RLSBmutex1
+7	16	50		mov __RLSReadBuf1, __RLSBbufLSWrite1
+7	16	52		set __RLSBytesCount1, 1
+7	16	55		wait2 NA, __constVal15
+7	16	58		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+7	16	60		index __D0avoid, __RLSReadBuf1, 65535
+7	16	64		release __RLSBmutex1
+7	3996	65	#line 3996 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	15	65	#line 15 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	16	65		mov __signed_stack_001avoid, __D0avoid
+7	15	67	#line 15 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	16	67		mov __D0avoid, __avoid_7qG2_THRESHOLD_7qG2_000
+7	15	69	#line 15 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	16	69		cmp 0, __zfavoid, __signed_stack_001avoid, __D0avoid
+7	15	73	#line 15 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	16	73		mov __D0avoid, __zfavoid
+7	16	75	#line 16 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	17	75		brtst 4, __NXC_Label_503, __zfavoid
+7	17	78	#line 17 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	18	78	#pragma macro 7
+7	18	78		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	4010	101	#line 4010 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	17	101	#line 17 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	17	101	#line 17 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	18	101		set __signed_stack_001avoid, 50
+7	17	104	#line 17 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	17	104	#line 17 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	18	104		set __D0avoid, 180
+7	18	107	#line 18 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	19	107	#pragma macro 33
+7	19	107		arrbuild __rotate_ports0, __constVal0
+7	19	111		mov __rotate_power0, __signed_stack_001avoid
+7	19	113		mov __rotate_angle0, __D0avoid
+7	19	115		mov __rotate_turnpct0, __constVal0
+7	19	117		mov __rotate_sync0, __constVal0
+7	19	119		mov __rotate_stop0, __constVal1
+7	19	121		mov __rotate_theRVP0, __constVal32
+7	19	123		mov __rotate_theRVI0, __constVal0
+7	19	125		mov __rotate_theRVD0, __constVal96
+7	19	127		subcall __RotateMotor0, ____RotateMotor0_return
+7	4023	129	#line 4023 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	18	129	#line 18 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	22	129	#line 22 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	22	129	#line 22 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	23	129		subret __avoid_return
+8	24	0	#line 24 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	25	0		set __SetSensorTouch_7qG2_port_7qG2_000_inline_getTrash, 0
+8	24	3	#line 24 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	3718	3	#line 3718 "NXCDefs.h"
+8	3719	3	#pragma macro 6
+8	3719	3		setin __constVal1, __SetSensorTouch_7qG2_port_7qG2_000_inline_getTrash, 0
+8	3719	7		setin __constVal32, __SetSensorTouch_7qG2_port_7qG2_000_inline_getTrash, 1
+8	3719	11		acquire __ResetSensorMutex
+8	3719	12		mov __ResetSensorPort, __SetSensorTouch_7qG2_port_7qG2_000_inline_getTrash
+8	3719	14		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+8	3719	16		release __ResetSensorMutex
+8	4043	17	#line 4043 "NXCDefs.h"
+8	3718	17	#line 3718 "NXCDefs.h"
+8	25	17	#line 25 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	25	17	#line 25 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	26	17		getin __signed_stack_001getTrash, __constVal0, 4
+8	25	21	#line 25 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	25	21	#line 25 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	26	21		set __D0getTrash, 1
+8	25	24	#line 25 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	26	24		cmp 4, __zfgetTrash, __signed_stack_001getTrash, __D0getTrash
+8	25	28	#line 25 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	26	28		mov __D0getTrash, __zfgetTrash
+8	26	30	#line 26 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	27	30		brtst 4, __NXC_Label_512, __zfgetTrash
+8	27	33	#line 27 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	28	33		subcall closeClaw, __closeClaw_return
+8	27	35	#line 27 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	28	35	#line 28 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	29	35		set __DU0getTrash, 1
+8	28	38	#line 28 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	28	38	#line 28 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	29	38		subret __getTrash_return
+8	28	40	#line 28 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	31	40	#line 31 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	31	40	#line 31 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	32	40		subret __getTrash_return
+9	37	0	#line 37 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	38	0		set __findDumpsite_7qG2_THRESHOLD_7qG2_000, 50
+9	37	3	#line 37 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	37	3	#line 37 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	38	3		set __SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite, 3
+9	37	6	#line 37 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	38	6	#line 38 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	39	6		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_findDumpsite, __constVal1
+9	3729	8	#line 3729 "NXCDefs.h"
+9	3730	8		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite
+9	3729	10	#line 3729 "NXCDefs.h"
+9	3729	10	#line 3729 "NXCDefs.h"
+9	3730	10		mov __DU0SetSensorLight_inline_findDumpsite, __SetSensorLight_7qG2_bActive_7qG2_000_inline_findDumpsite
+9	3729	12	#line 3729 "NXCDefs.h"
+9	3730	12		tst 5, __zfSetSensorLight_inline_findDumpsite, __DU0SetSensorLight_inline_findDumpsite
+9	3729	15	#line 3729 "NXCDefs.h"
+9	3730	15		brtst 4, __001__NXC_Label_4, __zfSetSensorLight_inline_findDumpsite
+9	3729	18	#line 3729 "NXCDefs.h"
+9	3730	18		set __D0SetSensorLight_inline_findDumpsite, 5
+9	3729	21	#line 3729 "NXCDefs.h"
+9	3730	21		jmp __001__NXC_Label_5
+9	3729	23	#line 3729 "NXCDefs.h"
+9	3730	23		set __D0SetSensorLight_inline_findDumpsite, 6
+9	3729	26	#line 3729 "NXCDefs.h"
+9	3730	26		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __D0SetSensorLight_inline_findDumpsite
+9	3663	28	#line 3663 "NXCDefs.h"
+9	3664	28		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, 0
+9	3663	32	#line 3663 "NXCDefs.h"
+9	3730	32	#line 3730 "NXCDefs.h"
+9	3730	32	#line 3730 "NXCDefs.h"
+9	3731	32		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite
+9	3730	34	#line 3730 "NXCDefs.h"
+9	3730	34	#line 3730 "NXCDefs.h"
+9	3731	34		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_findDumpsite, 128
+9	3730	37	#line 3730 "NXCDefs.h"
+9	3676	37	#line 3676 "NXCDefs.h"
+9	3677	37		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, 1
+9	3676	41	#line 3676 "NXCDefs.h"
+9	3731	41	#line 3731 "NXCDefs.h"
+9	3731	41	#line 3731 "NXCDefs.h"
+9	3732	41		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite
+9	3731	43	#line 3731 "NXCDefs.h"
+9	3694	43	#line 3694 "NXCDefs.h"
+9	3695	43	#pragma macro 4
+9	3695	43		acquire __ResetSensorMutex
+9	3695	44		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite
+9	3695	46		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+9	3695	48		release __ResetSensorMutex
+9	4180	49	#line 4180 "NXCDefs.h"
+9	3694	49	#line 3694 "NXCDefs.h"
+9	3732	49	#line 3732 "NXCDefs.h"
+9	38	49	#line 38 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	38	49	#line 38 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	39	49		getin __signed_stack_001findDumpsite, __constVal3, 4
+9	38	53	#line 38 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	38	53	#line 38 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	39	53		mov __D0findDumpsite, __findDumpsite_7qG2_THRESHOLD_7qG2_000
+9	38	55	#line 38 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	39	55		cmp 0, __zffindDumpsite, __signed_stack_001findDumpsite, __D0findDumpsite
+9	38	59	#line 38 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	39	59		mov __D0findDumpsite, __zffindDumpsite
+9	39	61	#line 39 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	40	61		brtst 4, __NXC_Label_520, __zffindDumpsite
+9	39	64	#line 39 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	40	64		set __D0findDumpsite, 75
+9	40	67	#line 40 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	41	67	#pragma macro 7
+9	41	67		setout __constVal0, 2, __D0findDumpsite, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	4204	90	#line 4204 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	40	90	#line 40 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	40	90	#line 40 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	41	90	#line 41 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	42	90	#pragma macro 10
+9	42	90		neg __OnRev_Tmp, __constVal75
+9	42	93		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	4211	116	#line 4211 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	41	116	#line 41 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	42	116	#line 42 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	43	116		jmp __NXC_Label_519
+9	42	118	#line 42 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	42	118	#line 42 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	43	118		getin __signed_stack_001findDumpsite, __constVal3, 4
+9	42	122	#line 42 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	42	122	#line 42 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	43	122		mov __D0findDumpsite, __findDumpsite_7qG2_THRESHOLD_7qG2_000
+9	42	124	#line 42 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	43	124		cmp 1, __zffindDumpsite, __signed_stack_001findDumpsite, __D0findDumpsite
+9	42	128	#line 42 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	43	128		mov __D0findDumpsite, __zffindDumpsite
+9	43	130	#line 43 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	44	130		brtst 4, __NXC_Label_528, __zffindDumpsite
+9	43	133	#line 43 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	44	133		set __D0findDumpsite, 75
+9	44	136	#line 44 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	45	136	#pragma macro 7
+9	45	136		setout __OUT_AB, 2, __D0findDumpsite, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	4237	159	#line 4237 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	44	159	#line 44 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	45	159	#line 45 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	46	159		subcall avoid, __avoid_return
+9	45	161	#line 45 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	45	161	#line 45 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	46	161		getin __signed_stack_001findDumpsite, __constVal3, 4
+9	45	165	#line 45 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	45	165	#line 45 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	46	165		set __D0findDumpsite, 90
+9	45	168	#line 45 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	46	168		cmp 1, __zffindDumpsite, __signed_stack_001findDumpsite, __D0findDumpsite
+9	45	172	#line 45 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	46	172		mov __D0findDumpsite, __zffindDumpsite
+9	46	174	#line 46 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	47	174		brtst 4, __NXC_Label_535, __zffindDumpsite
+9	47	177	#line 47 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	48	177		set __DU0findDumpsite, 1
+9	47	180	#line 47 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	47	180	#line 47 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	48	180		subret __findDumpsite_return
+9	47	182	#line 47 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	51	182	#line 51 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	53	182	#line 53 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	54	182		jmp __NXC_Label_527
+9	53	184	#line 53 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	53	184	#line 53 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	54	184		subret __findDumpsite_return
+10	54	0	#line 54 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	55	0		subcall findDumpsite, __findDumpsite_return
+10	54	2	#line 54 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	55	2		mov __DU0dropOff, __DU0findDumpsite
+10	55	4	#line 55 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	56	4		tst 5, __zfdropOff, __DU0dropOff
+10	55	7	#line 55 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	56	7		brtst 4, __NXC_Label_540, __zfdropOff
+10	56	10	#line 56 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	57	10		subcall openClaw, __openClaw_return
+10	56	12	#line 56 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	60	12	#line 60 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	60	12	#line 60 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	61	12		subret __dropOff_return
+11	86	0	#line 86 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+11	87	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
-1	__RotateMotor2	46	NXTDefs.h
-2	__ResetSensorSubroutine	215	NXTDefs.h
-3	closeClaw	228	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
-4	openClaw	260	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
-5	getTrash	291	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
-6	findDumpsite	328	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
-7	dropOff	512	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
-8	__initialize_global_data	526	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
+1	__RotateMotor0	56	NXTDefs.h
+2	__RotateMotor2	225	NXTDefs.h
+3	__ResetSensorSubroutine	394	NXTDefs.h
+4	__ReadLSBytes1	407	NXTDefs.h
+5	closeClaw	492	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
+6	openClaw	524	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
+7	avoid	555	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
+8	getTrash	686	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
+9	findDumpsite	728	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
+10	dropOff	914	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
+11	__initialize_global_data	928	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc

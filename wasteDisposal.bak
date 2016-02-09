@@ -10,7 +10,7 @@ sub openClaw(){
 
 sub avoid(){
 //avaoid checks 30cm in front, it obstacle, turns 45 degrees left
-    int THRESHOLD = 30;
+    const int THRESHOLD = 30;
     
     SetSensorLowspeed(IN_2);
     if(SensorUS(IN_2) < THRESHOLD){
@@ -20,19 +20,20 @@ sub avoid(){
 
 }
 
-sub getTrash(){
+bool getTrash(){
 //if the touch sensor is pressed, the claw will close locking the trash in a death grip
     SetSensorTouch(IN_1);
     if(SENSOR_1 == 1){
          closeClaw();
+         return true;
     }
 }
 
-sub findDumpsite(){
+bool findDumpsite(){
 //robot will rotate looking for light. If the light value is greater than the
 //threshold, the robot will stop looking and move toward the light
 
-    int THRESHOLD = 50;    //Sets the value of the light threshold
+    const int THRESHOLD = 50;    //Sets the value of the light threshold
 
     SetSensorLight(IN_4);
     while(Sensor(IN_4) < THRESHOLD){        //robot will spin until it finds light > threshold
@@ -41,36 +42,46 @@ sub findDumpsite(){
     }
     while(Sensor(IN_4) > THRESHOLD){
          OnFwd(OUT_AB,75);
+         avoid();
          if(Sensor(IN_4) > 90){
-             //return true;
+             return true;
          }
     }
     
 
 }
 
-sub dropOff(){
-    findDumpsite();
-    if
-
+bool dropOff(){
+    if(findDumpsite()){
+        openClaw();
+        return false;
+    }
 }
 
 
 task main(){
  //this is the main file that will eventually do shit
+while(true){
+     OnFwd(OUT_AB, 75);
+     avoid();
+     if(getTrash()){
+          dropOff();   //need to reset getTrash() to false b/c it is constantly
+                       //looking to drop off without trash, other than that, it
+                       //working very nicely.
+     }
+}
 
  /*openClaw();
  closeClaw();
  while(true){
  findDumpsite(); */
  
- while(true){
+ /*while(true){
  OnFwd(OUT_AB, 75);
  //avoid();
  getTrash();
- }
- 
-
+ dropOff();
+ }*/
 }
 
 
