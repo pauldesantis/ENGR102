@@ -20,7 +20,7 @@ sub avoid(){
 }
 
 sub getTrash(){
-    SetSensorTouch(IN_1)
+    SetSensorTouch(IN_1);
     if(SENSOR_1 == 1){
          closeClaw();
     }
@@ -50,7 +50,8 @@ task main(){
  
  while(true){
  OnFwd(OUT_AB, 75);
- avoid();
+ //avoid();
+ getTrash();
  }
  
  }

@@ -4,6 +4,7 @@ sub closeClaw(){
 }
 
 sub openClaw(){
+//closes the claw by rotating motor c backward
     RotateMotor(OUT_C, 25, -45);
 }
 
@@ -20,6 +21,7 @@ sub avoid(){
 }
 
 sub getTrash(){
+//if the touch sensor is pressed, the claw will close locking the trash in a death grip
     SetSensorTouch(IN_1);
     if(SENSOR_1 == 1){
          closeClaw();
@@ -27,6 +29,9 @@ sub getTrash(){
 }
 
 sub findDumpsite(){
+//robot will rotate looking for light. If the light value is greater than the
+//threshold, the robot will stop looking and move toward the light
+
     int THRESHOLD = 50;    //Sets the value of the light threshold
 
     SetSensorLight(IN_4);
