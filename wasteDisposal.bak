@@ -1,6 +1,7 @@
 sub closeClaw(){
 //this function will open the claw by rotating motor c forward
-       RotateMotor(OUT_C, 25, 45);
+       //RotateMotor(OUT_C, 25, 45);
+       OnFwd(OUT_C,25)
 }
 
 sub openClaw(){
@@ -15,15 +16,15 @@ sub avoid(){
     SetSensorLowspeed(IN_2);
     if(SensorUS(IN_2) < THRESHOLD){
          Off(OUT_AB);
-         RotateMotor(OUT_A, 50, 180);
+         RotateMotor(OUT_A, 75, 180);
     }
 
 }
 
 bool getTrash(){
 //if the touch sensor is pressed, the claw will close locking the trash in a death grip
-    SetSensorTouch(IN_1);
-    if(SENSOR_1 == 1){
+    SetSensorColorFull(IN_1);
+    if(Sensor(IN_1)==2 || Sensor(IN_1)==4){
          closeClaw();
          return true;
     }
@@ -54,7 +55,7 @@ bool findDumpsite(){
 bool dropOff(){
     if(findDumpsite()){
         openClaw();
-        return false;
+        //return false;
     }
 }
 
@@ -66,8 +67,9 @@ while(true){
      avoid();
      if(getTrash()){
           dropOff();   //need to reset getTrash() to false b/c it is constantly
-                       //looking to drop off without trash, other than that, it
-                       //working very nicely.
+                       //looking to drop off without trash
+                       //also once the light has been located, the bot turns slow
+                       //instead of moving toward the light.
      }
 }
 

@@ -1,6 +1,7 @@
 sub closeClaw(){
 //this function will open the claw by rotating motor c forward
-       RotateMotor(OUT_C, 25, 45);
+       //RotateMotor(OUT_C, 25, 45);
+       OnFwd(OUT_C,25);
 }
 
 sub openClaw(){
@@ -15,17 +16,20 @@ sub avoid(){
     SetSensorLowspeed(IN_2);
     if(SensorUS(IN_2) < THRESHOLD){
          Off(OUT_AB);
-         RotateMotor(OUT_A, 50, 180);
+         RotateMotor(OUT_A, 75, 180);
     }
 
 }
 
 bool getTrash(){
 //if the touch sensor is pressed, the claw will close locking the trash in a death grip
-    SetSensorTouch(IN_1);
-    if(SENSOR_1 == 1){
+    SetSensorColorFull(IN_1);
+    if(Sensor(IN_1)==2 || Sensor(IN_1)==4){     //if the color is blue or yellow closeClaw()
          closeClaw();
          return true;
+    }
+    else{
+    return false;
     }
 }
 
@@ -53,8 +57,10 @@ bool findDumpsite(){
 
 bool dropOff(){
     if(findDumpsite()){
-        openClaw();
-        return false;
+        Off(OUT_AB);                        //turns off wheels for placement of trash
+        openClaw();                         //opens claw (duh)
+        RotateMotor(OUT_AB, 75, 180);       //robot backs away from trash
+        RotateMotor(OUT_A, 75, 360);        //robot makes 90 degree turn, hopefully
     }
 }
 
