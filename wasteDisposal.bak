@@ -1,7 +1,7 @@
 sub closeClaw(){
 //this function will open the claw by rotating motor c forward
        //RotateMotor(OUT_C, 25, 45);
-       OnFwd(OUT_C,25)
+       OnFwd(OUT_C,25);
 }
 
 sub openClaw(){
@@ -24,9 +24,12 @@ sub avoid(){
 bool getTrash(){
 //if the touch sensor is pressed, the claw will close locking the trash in a death grip
     SetSensorColorFull(IN_1);
-    if(Sensor(IN_1)==2 || Sensor(IN_1)==4){
+    if(Sensor(IN_1)==2 || Sensor(IN_1)==4){     //if the color is blue or yellow closeClaw()
          closeClaw();
          return true;
+    }
+    else{
+    return false;
     }
 }
 
@@ -54,36 +57,25 @@ bool findDumpsite(){
 
 bool dropOff(){
     if(findDumpsite()){
-        openClaw();
-        //return false;
+        Off(OUT_AB);                        //turns off wheels for placement of trash
+        openClaw();                         //opens claw (duh)
+        RotateMotor(OUT_AB, 75, 180);       //robot backs away from trash
+        RotateMotor(OUT_A, 75, 360);        //robot makes 90 degree turn, hopefully
     }
 }
 
 
 task main(){
- //this is the main file that will eventually do shit
-while(true){
-     OnFwd(OUT_AB, 75);
-     avoid();
-     if(getTrash()){
-          dropOff();   //need to reset getTrash() to false b/c it is constantly
-                       //looking to drop off without trash
-                       //also once the light has been located, the bot turns slow
-                       //instead of moving toward the light.
-     }
-}
-
- /*openClaw();
- closeClaw();
- while(true){
- findDumpsite(); */
- 
- /*while(true){
- OnFwd(OUT_AB, 75);
- //avoid();
- getTrash();
- dropOff();
- }*/
+   while(true){
+        OnFwd(OUT_AB, 75);
+        avoid();
+        if(getTrash()){
+             dropOff();   //need to reset getTrash() to false b/c it is constantly
+                          //looking to drop off without trash
+                          //also once the light has been located, the bot turns slow
+                          //instead of moving toward the light.
+        }
+   }
 }
 
 

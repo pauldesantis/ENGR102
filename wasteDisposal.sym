@@ -24,7 +24,7 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 21	__CLSCSMutex1	9	0	84	4	2
 22	__DU0findDumpsite	5	1	88	4	2
 23	__D0getTrash	6	1	92	4	8
-24	__DU0getTrash	5	1	96	4	3
+24	__DU0getTrash	5	1	96	4	2
 25	__D0findDumpsite	6	1	100	4	13
 26	__D0dropOff	6	1	104	4	4
 27	__DU0dropOff	5	1	108	4	3
@@ -73,7 +73,7 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 70	__closeClaw_return	1	1	177	1	3
 71	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_avoid	1	1	178	1	2
 72	__zfgetTrash	1	1	179	1	7
-73	__getTrash_return	1	1	180	1	5
+73	__getTrash_return	1	1	180	1	4
 74	__SetSensorColorFull_7qG2_port_7qG2_000_inline_getTrash	1	1	181	1	4
 75	__zffindDumpsite	1	1	182	1	9
 76	__findDumpsite_return	1	1	183	1	4
@@ -174,43 +174,43 @@ Index	Identifier	Type	Flag	Data	Size	RefCount
 171	__rotate_ports3.__rotate_ports3_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	69	0	#line 69 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	70	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	69	2	#line 69 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	69	2	#line 69 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	70	2		set __D0main, 1
-0	70	5	#line 70 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	71	5		tst 5, __zfmain, __D0main
-0	70	8	#line 70 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	71	8		brtst 4, __NXC_Label_552, __zfmain
-0	70	11	#line 70 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	71	11		set __D0main, 75
-0	71	14	#line 71 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	72	14	#pragma macro 7
-0	72	14		setout __OUT_AB, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4368	37	#line 4368 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	68	0	#line 68 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	69	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	68	2	#line 68 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	68	2	#line 68 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	69	2		set __D0main, 1
+0	69	5	#line 69 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	70	5		tst 5, __zfmain, __D0main
+0	69	8	#line 69 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	70	8		brtst 4, __NXC_Label_550, __zfmain
+0	69	11	#line 69 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	70	11		set __D0main, 75
+0	70	14	#line 70 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	71	14	#pragma macro 7
+0	71	14		setout __OUT_AB, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4359	37	#line 4359 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	70	37	#line 70 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 0	71	37	#line 71 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	72	37	#line 72 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	73	37		subcall avoid, __avoid_return
-0	72	39	#line 72 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	72	39	#line 72 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	73	39		subcall getTrash, __getTrash_return
-0	72	41	#line 72 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	73	41		mov __DU0main, __DU0getTrash
-0	73	43	#line 73 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	74	43		tst 5, __zfmain, __DU0main
-0	73	46	#line 73 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	74	46		brtst 4, __NXC_Label_559, __zfmain
-0	77	49	#line 77 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	78	49		subcall dropOff, __dropOff_return
-0	77	51	#line 77 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	78	51		mov __DU0main, __DU0dropOff
-0	77	53	#line 77 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	91	53	#line 91 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	95	53	#line 95 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	96	53		jmp __NXC_Label_551
-0	95	55	#line 95 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-0	96	55		exit -1, -1
+0	72	37		subcall avoid, __avoid_return
+0	71	39	#line 71 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	71	39	#line 71 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	72	39		subcall getTrash, __getTrash_return
+0	71	41	#line 71 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	72	41		mov __DU0main, __DU0getTrash
+0	72	43	#line 72 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	73	43		tst 5, __zfmain, __DU0main
+0	72	46	#line 72 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	73	46		brtst 4, __NXC_Label_557, __zfmain
+0	76	49	#line 76 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	77	49		subcall dropOff, __dropOff_return
+0	76	51	#line 76 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	77	51		mov __DU0main, __DU0dropOff
+0	76	53	#line 76 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	78	53	#line 78 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	82	53	#line 82 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	83	53		jmp __NXC_Label_549
+0	82	55	#line 82 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	83	55		exit -1, -1
 1	4476	0		brtst 4, __rotate_Done0, __rotate_angle0
 1	4477	3		set ____RotateMotor0_sign_tmp, 0
 1	4477	6		brtst EQ, __sign_0, __rotate_angle0
@@ -561,17 +561,11 @@ Clump	Line	PC	Source
 9	29	61	#line 29 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 9	30	61		subret __getTrash_return
 9	29	63	#line 29 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-9	31	63	#line 31 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-9	32	63		jmp __NXC_Label_514
-9	32	65	#line 32 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-9	33	65		set __DU0getTrash, 0
-9	32	68	#line 32 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-9	32	68	#line 32 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-9	33	68		subret __getTrash_return
-9	32	70	#line 32 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-9	35	70	#line 35 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-9	35	70	#line 35 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-9	36	70		subret __getTrash_return
+9	32	63	#line 32 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	33	63		jmp __NXC_Label_514
+9	35	65	#line 35 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	35	65	#line 35 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	36	65		subret __getTrash_return
 10	41	0	#line 41 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	42	0		set __findDumpsite_7qG2_THRESHOLD_7qG2_000, 50
 10	41	3	#line 41 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
@@ -620,7 +614,7 @@ Clump	Line	PC	Source
 10	3695	44		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite
 10	3695	46		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
 10	3695	48		release __ResetSensorMutex
-10	4205	49	#line 4205 "NXCDefs.h"
+10	4196	49	#line 4196 "NXCDefs.h"
 10	3694	49	#line 3694 "NXCDefs.h"
 10	3732	49	#line 3732 "NXCDefs.h"
 10	42	49	#line 42 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
@@ -634,23 +628,23 @@ Clump	Line	PC	Source
 10	42	59	#line 42 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	43	59		mov __D0findDumpsite, __zffindDumpsite
 10	43	61	#line 43 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-10	44	61		brtst 4, __NXC_Label_522, __zffindDumpsite
+10	44	61		brtst 4, __NXC_Label_520, __zffindDumpsite
 10	43	64	#line 43 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	44	64		set __D0findDumpsite, 75
 10	44	67	#line 44 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	45	67	#pragma macro 7
 10	45	67		setout __constVal0, 2, __D0findDumpsite, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-10	4229	90	#line 4229 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	4220	90	#line 4220 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	44	90	#line 44 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	44	90	#line 44 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	45	90	#line 45 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	46	90	#pragma macro 10
 10	46	90		neg __OnRev_Tmp, __constVal75
 10	46	93		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-10	4236	116	#line 4236 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	4227	116	#line 4227 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	45	116	#line 45 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	46	116	#line 46 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-10	47	116		jmp __NXC_Label_521
+10	47	116		jmp __NXC_Label_519
 10	46	118	#line 46 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	46	118	#line 46 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	47	118		getin __signed_stack_001findDumpsite, __constVal3, 4
@@ -662,13 +656,13 @@ Clump	Line	PC	Source
 10	46	128	#line 46 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	47	128		mov __D0findDumpsite, __zffindDumpsite
 10	47	130	#line 47 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-10	48	130		brtst 4, __NXC_Label_530, __zffindDumpsite
+10	48	130		brtst 4, __NXC_Label_528, __zffindDumpsite
 10	47	133	#line 47 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	48	133		set __D0findDumpsite, 75
 10	48	136	#line 48 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	49	136	#pragma macro 7
 10	49	136		setout __OUT_AB, 2, __D0findDumpsite, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-10	4262	159	#line 4262 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	4253	159	#line 4253 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	48	159	#line 48 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	49	159	#line 49 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	50	159		subcall avoid, __avoid_return
@@ -683,7 +677,7 @@ Clump	Line	PC	Source
 10	49	172	#line 49 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	50	172		mov __D0findDumpsite, __zffindDumpsite
 10	50	174	#line 50 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-10	51	174		brtst 4, __NXC_Label_537, __zffindDumpsite
+10	51	174		brtst 4, __NXC_Label_535, __zffindDumpsite
 10	51	177	#line 51 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	52	177		set __DU0findDumpsite, 1
 10	51	180	#line 51 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
@@ -692,7 +686,7 @@ Clump	Line	PC	Source
 10	51	182	#line 51 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	55	182	#line 55 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	57	182	#line 57 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-10	58	182		jmp __NXC_Label_529
+10	58	182		jmp __NXC_Label_527
 10	57	184	#line 57 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	57	184	#line 57 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 10	58	184		subret __findDumpsite_return
@@ -703,11 +697,11 @@ Clump	Line	PC	Source
 11	59	4	#line 59 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 11	60	4		tst 5, __zfdropOff, __DU0dropOff
 11	59	7	#line 59 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-11	60	7		brtst 4, __NXC_Label_542, __zfdropOff
+11	60	7		brtst 4, __NXC_Label_540, __zfdropOff
 11	60	10	#line 60 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 11	61	10	#pragma macro 7
 11	61	10		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-11	4312	33	#line 4312 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+11	4303	33	#line 4303 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 11	60	33	#line 60 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 11	61	33	#line 61 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 11	62	33		subcall openClaw, __openClaw_return
@@ -731,7 +725,7 @@ Clump	Line	PC	Source
 11	63	58		mov __rotate_theRVD3, __constVal96
 11	63	60		subcall __RotateMotor3, ____RotateMotor3_return
 11	63	62		release __rotateMutex0
-11	4328	63	#line 4328 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+11	4319	63	#line 4319 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 11	62	63	#line 62 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 11	62	63	#line 62 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 11	63	63		set __signed_stack_001dropOff, 75
@@ -752,13 +746,13 @@ Clump	Line	PC	Source
 11	64	88		mov __rotate_theRVD0, __constVal96
 11	64	90		subcall __RotateMotor0, ____RotateMotor0_return
 11	64	93		release __rotateMutex0
-11	4341	94	#line 4341 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+11	4332	94	#line 4332 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 11	63	94	#line 63 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 11	67	94	#line 67 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 11	67	94	#line 67 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 11	68	94		subret __dropOff_return
-12	96	0	#line 96 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
-12	97	0		subret ____initialize_global_data_return
+12	83	0	#line 83 "Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+12	84	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
 0	main	0	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
@@ -771,6 +765,6 @@ Clump	Name	Offset	File
 7	openClaw	691	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
 8	avoid	720	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
 9	getTrash	854	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
-10	findDumpsite	926	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
-11	dropOff	1112	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
-12	__initialize_global_data	1208	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
+10	findDumpsite	921	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
+11	dropOff	1107	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc
+12	__initialize_global_data	1203	Z:\Documents\GitHub\ENGR102\wasteDisposal.nxc

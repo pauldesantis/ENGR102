@@ -29,7 +29,7 @@ bool getTrash(){
          return true;
     }
     else{
-    return false;
+    return false;      //this may not work
     }
 }
 
@@ -40,16 +40,16 @@ bool findDumpsite(){
     const int THRESHOLD = 50;    //Sets the value of the light threshold
 
     SetSensorLight(IN_4);
-    while(Sensor(IN_4) < THRESHOLD){        //robot will spin until it finds light > threshold
+    while(Sensor(IN_4) < THRESHOLD){        //robot will spin until it finds light intensity > threshold
          OnFwd(OUT_A, 75);
          OnRev(OUT_B, 75);
     }
-    while(Sensor(IN_4) > THRESHOLD){
+    while(Sensor(IN_4) > THRESHOLD){        //when the light intensity > threshold start moving toward light
          OnFwd(OUT_AB,75);
          avoid();
-         if(Sensor(IN_4) > 90){
-             return true;
-         }
+         if(Sensor(IN_4) > 90){             //if intensity > 90 we're close enough and return true
+             return true;                   //true will tell the bot that we have arrived to dumpsite
+         }                                  //and initiate dropOff procedure
     }
     
 
@@ -66,29 +66,16 @@ bool dropOff(){
 
 
 task main(){
- //this is the main file that will eventually do shit
-while(true){
-     OnFwd(OUT_AB, 75);
-     avoid();
-     if(getTrash()){
-          dropOff();   //need to reset getTrash() to false b/c it is constantly
-                       //looking to drop off without trash
-                       //also once the light has been located, the bot turns slow
-                       //instead of moving toward the light.
-     }
-}
-
- /*openClaw();
- closeClaw();
- while(true){
- findDumpsite(); */
- 
- /*while(true){
- OnFwd(OUT_AB, 75);
- //avoid();
- getTrash();
- dropOff();
- }*/
+   while(true){
+        OnFwd(OUT_AB, 75);
+        avoid();
+        if(getTrash()){
+             dropOff();   //need to reset getTrash() to false b/c it is constantly
+                          //looking to drop off without trash
+                          //also once the light has been located, the bot turns slow
+                          //instead of moving toward the light.
+        }
+   }
 }
 
 
