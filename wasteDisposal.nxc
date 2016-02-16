@@ -1,3 +1,5 @@
+bool noTrash = true;
+
 sub closeClaw(){
 //this function will open the claw by rotating motor c forward
        OnFwd(OUT_C, 50);
@@ -30,16 +32,15 @@ bool getTrash(){
 //if the touch sensor is pressed, the claw will close locking the trash in a death grip
 
 SetSensorColorFull(IN_1);
-//if (!haveTrash){
+
+if (noTrash){
     if(Sensor(IN_1)==2 || Sensor(IN_1)==4){     //if the color is blue or yellow closeClaw()
          Off(OUT_AB);
          closeClaw();
+         noTrash = false;
          return true;
     }
-//}
-    else{
-    //haveTrash = false;      //this may not work
-    }
+}
 }
 
 bool findDumpsite(){
@@ -79,14 +80,12 @@ task main(){
    while(true){
         OnFwd(OUT_AB, 75);
         avoid();
-        bool yes = getTrash();
-        if(yes){
+        if(getTrash()){
              Wait(1000);  //pauses befor dropoff
              dropOff();   //need to reset getTrash() to false b/c it is constantly
                           //looking to drop off without trash
                           //also once the light has been located, the bot turns slow
                           //instead of moving toward the light.
-        yes = false;      //should reset
 
         }
    }
