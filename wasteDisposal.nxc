@@ -41,6 +41,9 @@ if (noTrash){
          return true;
     }
 }
+else {
+return false;
+}
 }
 
 bool findDumpsite(){
