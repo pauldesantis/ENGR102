@@ -1,0 +1,132 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_001main	6	1	0	4	4
+1	__D0main	6	1	4	4	6
+2	__D0forward	6	1	8	4	2
+3	__Wait_7qG2_ms_7qG2_000_inline_backward	5	1	12	4	2
+4	__Wait_7qG2_ms_7qG2_000_inline_forward	5	1	16	4	2
+5	__signed_stack_002main	6	1	20	4	4
+6	val	4	1	24	2	7
+7	__constVal63	2	0	26	1	2
+8	__constVal96	2	0	27	1	2
+9	__OnRev_Tmp	2	1	28	1	2
+10	__constVal60	2	0	29	1	1
+11	____initialize_global_data_return	1	1	30	1	3
+12	__backward_return	1	1	31	1	3
+13	__forward_return	1	1	32	1	3
+14	__constVal0	2	1	33	1	6
+15	__constVal3	2	0	34	1	2
+16	__PFTmp	1	1	35	1	1
+17	__constVal1	2	0	36	1	3
+18	__constVal32	2	0	37	1	6
+19	__zfmain	1	1	38	1	6
+20	__OUT_AB	7	0	40	4	2
+21	__OUT_AB.__OUT_AB_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	19	0	#line 19 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	20	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	19	2	#line 19 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	19	2	#line 19 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	20	2		set __signed_stack_001main, 5
+0	21	5	#line 21 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	21	5	#line 21 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	22	5		sub __signed_stack_001main, __signed_stack_001main, __constVal1
+0	21	9	#line 21 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	22	9		brtst 0, __NXC_Label_498, __signed_stack_001main
+0	21	12	#line 21 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	22	12		mov __signed_stack_002main, val
+0	21	14	#line 21 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	22	14	#line 22 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	23	14		set __D0main, 0
+0	22	17	#line 22 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	23	17		cmp 4, __zfmain, __signed_stack_002main, __D0main
+0	22	21	#line 22 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	23	21		mov __D0main, __zfmain
+0	23	23	#line 23 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	24	23		brtst 4, __NXC_Label_503, __zfmain
+0	24	26	#line 24 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	25	26		subcall backward, __backward_return
+0	24	28	#line 24 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	24	28	#line 24 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	24	28	#line 24 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	25	28	#line 25 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	25	28	#line 25 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	26	28		add val, val, __constVal1
+0	25	32	#line 25 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	25	32	#line 25 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	26	32	#line 26 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	27	32		jmp __NXC_Label_506
+0	26	34	#line 26 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	27	34		mov __signed_stack_002main, val
+0	26	36	#line 26 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	27	36	#line 27 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	28	36		set __D0main, 1
+0	27	39	#line 27 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	28	39		cmp 4, __zfmain, __signed_stack_002main, __D0main
+0	27	43	#line 27 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	28	43		mov __D0main, __zfmain
+0	28	45	#line 28 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	29	45		brtst 4, __NXC_Label_509, __zfmain
+0	29	48	#line 29 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	30	48		subcall forward, __forward_return
+0	29	50	#line 29 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	29	50	#line 29 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	29	50	#line 29 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	30	50	#line 30 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	30	50	#line 30 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	31	50		add val, val, __constVal1
+0	30	54	#line 30 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	30	54	#line 30 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	33	54	#line 33 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	34	54		jmp __NXC_Label_512
+0	34	56	#line 34 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	35	56		set val, 0
+0	34	59	#line 34 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	34	59	#line 34 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	36	59	#line 36 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	36	59	#line 36 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	38	59	#line 38 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	39	59		jmp __NXC_Label_497
+0	38	61	#line 38 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	39	61		exit -1, -1
+1	4	0	#line 4 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+1	5	0		set __D0forward, 60
+1	5	3	#line 5 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+1	6	3	#pragma macro 7
+1	6	3		setout __OUT_AB, 2, __D0forward, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	3653	26	#line 3653 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+1	5	26	#line 5 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+1	5	26	#line 5 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+1	6	26		set __Wait_7qG2_ms_7qG2_000_inline_forward, 1500
+1	5	29	#line 5 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+1	7921	29	#line 7921 "NXCDefs.h"
+1	7922	29		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_forward
+1	7921	32	#line 7921 "NXCDefs.h"
+1	7	32	#line 7 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+1	9	32	#line 9 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+1	10	32		subret __forward_return
+2	11	0	#line 11 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+2	12	0	#line 12 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+2	13	0	#pragma macro 10
+2	13	0		neg __OnRev_Tmp, __constVal60
+2	13	3		setout __OUT_AB, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+2	3679	26	#line 3679 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+2	12	26	#line 12 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+2	12	26	#line 12 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+2	13	26		set __Wait_7qG2_ms_7qG2_000_inline_backward, 1500
+2	12	29	#line 12 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+2	7921	29	#line 7921 "NXCDefs.h"
+2	7922	29		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_backward
+2	7921	32	#line 7921 "NXCDefs.h"
+2	14	32	#line 14 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+2	17	32	#line 17 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+2	18	32		subret __backward_return
+3	39	0	#line 39 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+3	40	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Paul\AppData\Local\Temp\temp.nxc
+1	forward	64	C:\Users\Paul\AppData\Local\Temp\temp.nxc
+2	backward	98	C:\Users\Paul\AppData\Local\Temp\temp.nxc
+3	__initialize_global_data	132	C:\Users\Paul\AppData\Local\Temp\temp.nxc

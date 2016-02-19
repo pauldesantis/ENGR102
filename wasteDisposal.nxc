@@ -1,5 +1,3 @@
-bool noTrash = true;
-
 sub closeClaw(){
 //this function will open the claw by rotating motor c forward
        OnFwd(OUT_C, 50);
@@ -17,10 +15,10 @@ sub openClaw(){
 }
 
 sub avoid(){
-//avaoid checks 30cm in front, it obstacle, turns 45 degrees left
+//avoid checks 30cm in front, if obstacle, turns 45 degrees left
     const int THRESHOLD = 30;
 
-    SetSensorLowspeed(IN_2);
+    SetSensorLowspeed(IN_2); //Ultrasonic sensor
     if(SensorUS(IN_2) < THRESHOLD){
          Off(OUT_AB);
          RotateMotor(OUT_A, -75, 180);
@@ -28,77 +26,52 @@ sub avoid(){
 
 }
 
-bool getTrash(){
-//if the touch sensor is pressed, the claw will close locking the trash in a death grip
-
-SetSensorColorFull(IN_1);
-
-if (noTrash){
-    if(Sensor(IN_1)==2 || Sensor(IN_1)==4){     //if the color is blue or yellow closeClaw()
-         Off(OUT_AB);
-         closeClaw();
-         noTrash = false;
-         return true;
-    }
-}
-else {
-return false;
-}
+sub dropOff(){
+    Off(OUT_AB);                        //turns off wheels for placement of trash
+    openClaw();                         //runs open claw
+    Wait(1000);                         //waits for claw to completely open
+    RotateMotor(OUT_AB, 50, -180);       //robot backs away from trash
+    RotateMotor(OUT_A, 50, 360);        //Turn distance?
 }
 
-bool findDumpsite(){
+
+sub findDumpsite(){
 //robot will rotate looking for light. If the light value is greater than the
 //threshold, the robot will stop looking and move toward the light
 
     const int THRESHOLD = 50;    //Sets the value of the light threshold
-
-    SetSensorLight(IN_4);
-    while(Sensor(IN_4) < THRESHOLD){        //robot will spin until it finds light intensity > threshold
+    int x = false;               //Creates a variable that will be used to keep findDumpsite looping
+    
+    SetSensorLight(IN_4);        //Light sensor
+    while(x == false){           // x is false until the robot drops off the trash, in which case it returns to main
+       if (Sensor(IN_4) > THRESHOLD){
+          if (Sensor(IN_4) > 90){
+            dropOff();
+            x = true;
+           }
+           else{
+            OnFwd(OUT_AB,50);
+            avoid();
+           }
+           }
+       else{                  // if the sensor is less than the threshold, the robot spins
          OnFwd(OUT_A, 50);
          OnRev(OUT_B, 50);
-    }
-    while(Sensor(IN_4) > THRESHOLD){        //when the light intensity > threshold start moving toward light
-         OnFwd(OUT_AB,50);
-         avoid();
-         if(Sensor(IN_4) > 90){             //if intensity > 90 we're close enough and return true
-             return true;                   //true will tell the bot that we have arrived to dumpsite
-         }                                  //and initiate dropOff procedure
-    }
-
-
+       }
+       }
 }
-
-bool dropOff(){
-    if(findDumpsite()){
-        Off(OUT_AB);                        //turns off wheels for placement of trash
-        openClaw();
-        Wait(1000);                         //opens claw (duh)
-        RotateMotor(OUT_AB, 50, -180);       //robot backs away from trash
-        RotateMotor(OUT_A, 50, 360);        //robot makes 90 degree turn, hopefully
-    }
-}
-
 
 task main(){
    while(true){
+        SetSensorColorFull(IN_1);
         OnFwd(OUT_AB, 75);
         avoid();
-        if(getTrash()){
-             Wait(1000);  //pauses befor dropoff
-             dropOff();   //need to reset getTrash() to false b/c it is constantly
-                          //looking to drop off without trash
-                          //also once the light has been located, the bot turns slow
-                          //instead of moving toward the light.
-
+        if(Sensor(IN_1)==2 || Sensor(IN_1)==4){     //if the color is blue or yellow closeClaw()
+            Off(OUT_AB);
+            closeClaw();
+            Wait(100);
+            findDumpsite();
         }
-   }
-
-/*bool yes =false;
-while (!yes)
-      {
-      yes = getTrash();
-      }
-findDumpsite();
-*/
-
+        }
+        
 }
