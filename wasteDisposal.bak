@@ -73,14 +73,5 @@ task main(){
             findDumpsite();
         }
         }
-   }
-
-/*bool yes =false;
-while (!yes)
-      {
-      yes = getTrash();
-      }
-findDumpsite();
-*/
-
+        
 }

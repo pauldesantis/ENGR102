@@ -32,6 +32,7 @@ sub dropOff(){
     Wait(1000);                         //waits for claw to completely open
     RotateMotor(OUT_AB, 50, -180);       //robot backs away from trash
     RotateMotor(OUT_A, 50, 360);        //Turn distance?
+    
 }
 
 
@@ -62,8 +63,8 @@ sub findDumpsite(){
 }
 
 task main(){
+   SetSensorColorFull(IN_1);
    while(true){
-        SetSensorColorFull(IN_1);
         OnFwd(OUT_AB, 75);
         avoid();
         if(Sensor(IN_1)==2 || Sensor(IN_1)==4){     //if the color is blue or yellow closeClaw()
@@ -75,3 +76,6 @@ task main(){
         }
         
 }
+
+
+

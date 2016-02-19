@@ -152,25 +152,25 @@ Clump	Line	PC	Source
 0	66	0		subcall __initialize_global_data, ____initialize_global_data_return
 0	65	2	#line 65 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
 0	65	2	#line 65 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	66	2		set __D0main, 1
-0	66	5	#line 66 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	67	5		tst 5, __zfmain, __D0main
-0	66	8	#line 66 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	67	8		brtst 4, __NXC_Label_545, __zfmain
-0	66	11	#line 66 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	67	11		set __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
-0	66	14	#line 66 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	3802	14	#line 3802 "NXCDefs.h"
-0	3803	14	#pragma macro 6
-0	3803	14		setin __constVal13, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
-0	3803	18		setin __constVal0, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 1
-0	3803	22		acquire __ResetSensorMutex
-0	3803	23		mov __ResetSensorPort, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main
-0	3803	25		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-0	3803	27		release __ResetSensorMutex
-0	4466	28	#line 4466 "NXCDefs.h"
-0	3802	28	#line 3802 "NXCDefs.h"
-0	67	28	#line 67 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	66	2		set __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
+0	65	5	#line 65 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	3802	5	#line 3802 "NXCDefs.h"
+0	3803	5	#pragma macro 6
+0	3803	5		setin __constVal13, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
+0	3803	9		setin __constVal0, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 1
+0	3803	13		acquire __ResetSensorMutex
+0	3803	14		mov __ResetSensorPort, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main
+0	3803	16		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3803	18		release __ResetSensorMutex
+0	4457	19	#line 4457 "NXCDefs.h"
+0	3802	19	#line 3802 "NXCDefs.h"
+0	66	19	#line 66 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	66	19	#line 66 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	67	19		set __D0main, 1
+0	67	22	#line 67 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	68	22		tst 5, __zfmain, __D0main
+0	67	25	#line 67 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	68	25		brtst 4, __NXC_Label_547, __zfmain
 0	67	28	#line 67 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
 0	68	28		set __D0main, 75
 0	68	31	#line 68 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
@@ -228,7 +228,7 @@ Clump	Line	PC	Source
 0	74	128	#line 74 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
 0	77	128	#line 77 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
 0	81	128	#line 81 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	82	128		jmp __NXC_Label_544
+0	82	128		jmp __NXC_Label_546
 0	81	130	#line 81 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
 0	82	130		exit -1, -1
 1	4476	0		brtst 4, __rotate_Done0, __rotate_angle0
