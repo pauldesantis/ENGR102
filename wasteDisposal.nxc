@@ -21,7 +21,29 @@ sub avoid(){
     SetSensorLowspeed(IN_2); //Ultrasonic sensor
     if(SensorUS(IN_2) < THRESHOLD){
          Off(OUT_AB);
-         RotateMotor(OUT_A, -75, 180);
+         OnRev(OUT_A, 50);
+         OnRev(OUT_B, 75);
+         //RotateMotor(OUT_B, 50, -270);
+         //RotateMotor(OUT_A, 75, -270);
+         Wait(1000);
+         Off(OUT_AB);
+         RotateMotor(OUT_A, 50, 135);
+         
+    }
+
+}
+
+sub lightavoid(){
+//avoid checks 30cm in front, if obstacle, turns 45 degrees left
+    const int THRESHOLD = 30;
+
+    SetSensorLowspeed(IN_2); //Ultrasonic sensor
+    if(SensorUS(IN_2) < THRESHOLD){
+         Off(OUT_AB);
+         OnFwd(OUT_A, 50);
+         OnRev(OUT_B, 50);
+         Wait(250);
+         Off(OUT_AB);
     }
 
 }
@@ -30,7 +52,7 @@ sub dropOff(){
     Off(OUT_AB);                        //turns off wheels for placement of trash
     openClaw();                         //runs open claw
     Wait(1000);                         //waits for claw to completely open
-    RotateMotor(OUT_AB, 50, -180);       //robot backs away from trash
+    RotateMotor(OUT_AB, 50, -360);      //robot backs away from trash
     RotateMotor(OUT_A, 50, 360);        //Turn distance?
     
 }
@@ -40,19 +62,19 @@ sub findDumpsite(){
 //robot will rotate looking for light. If the light value is greater than the
 //threshold, the robot will stop looking and move toward the light
 
-    const int THRESHOLD = 50;    //Sets the value of the light threshold
+    const int THRESHOLD = 60;    //Sets the value of the light threshold
     int x = false;               //Creates a variable that will be used to keep findDumpsite looping
     
     SetSensorLight(IN_4);        //Light sensor
     while(x == false){           // x is false until the robot drops off the trash, in which case it returns to main
        if (Sensor(IN_4) > THRESHOLD){
-          if (Sensor(IN_4) > 90){
+          if (Sensor(IN_4) > 97){
             dropOff();
             x = true;
            }
            else{
-            OnFwd(OUT_AB,50);
-            avoid();
+            OnFwd(OUT_AB, 75);
+            lightavoid();
            }
            }
        else{                  // if the sensor is less than the threshold, the robot spins
@@ -67,11 +89,19 @@ task main(){
    while(true){
         OnFwd(OUT_AB, 75);
         avoid();
-        if(Sensor(IN_1)==2 || Sensor(IN_1)==4){     //if the color is blue or yellow closeClaw()
+        if(Sensor(IN_1)==2){     //if the color is blue closeClaw()
             Off(OUT_AB);
             closeClaw();
-            Wait(100);
+            Wait(500);
             findDumpsite();
+        }
+        else{
+            if(Sensor(IN_1)==4){           // yellow
+            OnRev(OUT_AB, 75);
+            Wait(500);
+            Off(OUT_AB);
+            RotateMotor(OUT_A, 50, 360);
+        }
         }
         }
         

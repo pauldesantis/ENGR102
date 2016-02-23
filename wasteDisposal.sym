@@ -1,159 +1,174 @@
 #SYMBOLS
 Index	Identifier	Type	Flag	Data	Size	RefCount
-0	__D0closeClaw	6	1	0	4	2
-1	__D0avoid	6	1	4	4	7
-2	__RLSBmutex1	9	0	8	4	2
-3	__D0main	6	1	12	4	12
-4	__D0findDumpsite	6	1	16	4	15
-5	__D0dropOff	6	1	20	4	4
-6	__ResetSensorMutex	9	0	24	4	6
-7	__rotate_theAngle3	5	1	28	4	2
-8	__rotate_angle3	6	1	32	4	5
-9	__CLSRMutex1	9	0	36	4	2
-10	__CLSWMutex1	9	0	40	4	2
-11	__CLSCSMutex1	9	0	44	4	2
-12	__D0openClaw	6	1	48	4	2
-13	__signed_stack_002main	6	1	52	4	2
-14	__signed_stack_001main	6	1	56	4	4
-15	__signed_stack_001findDumpsite	6	1	60	4	6
-16	__Wait_7qG2_ms_7qG2_000_inline_dropOff	5	1	64	4	2
-17	__Wait_7qG2_ms_7qG2_000_inline_openClaw	5	1	68	4	2
-18	__Wait_7qG2_ms_7qG2_000_inline_closeClaw	5	1	72	4	2
-19	__D0SetSensorLowspeed_inline_avoid	6	1	76	4	3
-20	__DU0SetSensorLight_inline_findDumpsite	5	1	80	4	2
-21	__D0SetSensorLight_inline_findDumpsite	6	1	84	4	3
-22	__signed_stack_001dropOff	6	1	88	4	4
-23	__signed_stack_001avoid	6	1	92	4	4
-24	__DU0SetSensorLowspeed_inline_avoid	5	1	96	4	2
-25	__OnRevMutex	9	0	100	4	4
-26	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	104	4	2
-27	__rotate_theAngle0	5	1	108	4	2
-28	__rotate_angle0	6	1	112	4	6
-29	__rotateMutex0	9	0	116	4	6
-30	__rotate_OldRotCount3	4	1	120	2	2
-31	__rotate_RotCount0	4	1	122	2	4
-32	__rotate_RotCount3	4	1	124	2	4
-33	__avoid_7qG2_THRESHOLD_7qG2_000	4	1	126	2	2
-34	__rotate_OldRotCount0	4	1	128	2	2
-35	__findDumpsite_7qG2_x_7qG2_000	4	1	130	2	3
-36	__constValNeg180	4	0	132	2	1
-37	__findDumpsite_7qG2_THRESHOLD_7qG2_000	4	1	134	2	2
-38	__rotate_stop0	1	1	136	1	3
-39	__zfSetSensorLight_inline_findDumpsite	1	1	137	1	2
-40	__rotate_firstPort0	1	1	138	1	5
-41	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	139	1	2
-42	__rotate_sync0	1	1	140	1	3
-43	__SetSensorColorFull_7qG2_port_7qG2_000_inline_main	1	1	141	1	4
-44	__zfSetSensorLowspeed_inline_avoid	1	1	142	1	2
-45	__rotate_theRS0	1	1	143	1	3
-46	__zffindDumpsite	1	1	144	1	9
-47	__rotate_theRVP0	1	1	145	1	3
-48	__zfavoid	1	1	146	1	3
-49	__rotate_theRVI0	1	1	147	1	3
-50	__rotate_theUF0	1	1	148	1	6
-51	__rotate_turnpct0	2	1	149	1	4
-52	__rotate_theOM0	1	1	150	1	7
-53	__rotate_theRM0	1	1	151	1	4
-54	__zfmain	1	1	152	1	9
-55	__rotate_power0	1	1	153	1	5
-56	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_avoid	1	1	154	1	2
-57	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_avoid	1	1	155	1	2
-58	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_avoid	1	1	156	1	2
-59	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_avoid	1	1	157	1	2
-60	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_avoid	1	1	158	1	2
-61	__dropOff_return	1	1	159	1	3
-62	__findDumpsite_return	1	1	160	1	3
-63	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_avoid	1	1	161	1	2
-64	__constValNeg75	2	0	162	1	1
-65	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_avoid	1	1	163	1	4
-66	__closeClaw_return	1	1	164	1	3
-67	__constVal96	2	0	165	1	14
-68	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	166	1	2
-69	__SetSensorLight_7qG2_bActive_7qG2_000_inline_findDumpsite	1	1	167	1	2
-70	__constVal63	2	0	168	1	11
-71	__OnRev_Tmp	2	1	169	1	4
-72	__avoid_return	1	1	170	1	4
-73	__SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite	1	1	171	1	4
-74	__openClaw_return	1	1	172	1	3
-75	__rotate_theRVD0	1	1	173	1	3
-76	__rotate_thePower3	2	1	174	1	4
-77	__rotate_theTurnPct0	2	1	175	1	4
-78	__rotate_rs3	1	1	176	1	2
-79	__rotate_theRVI3	1	1	177	1	2
-80	__rotate_theRVD3	1	1	178	1	2
-81	__rotate_theTurnPct3	2	1	179	1	4
-82	__constVal1	2	0	180	1	12
-83	__constVal0	2	1	181	1	60
-84	__constVal32	2	0	182	1	42
-85	____RotateMotor0_return	1	1	183	1	4
-86	____RotateMotor0_sign_tmp	2	1	184	1	4
-87	__rotate_sync3	1	1	185	1	2
-88	__rotate_stop3	1	1	186	1	2
-89	__rotate_firstPort3	1	1	187	1	5
-90	__rotate_power3	1	1	188	1	4
-91	____initialize_global_data_return	1	1	189	1	3
-92	__rotate_turnpct3	2	1	190	1	3
-93	__rotate_theRS3	1	1	191	1	3
-94	__rotate_theRVP3	1	1	192	1	2
-95	__rotate_theRM3	1	1	193	1	4
-96	__rotate_theUF3	1	1	194	1	6
-97	__rotate_theOM3	1	1	195	1	7
-98	__constVal50	2	0	196	1	2
-99	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	197	1	2
-100	__RLSBResult1	2	1	198	1	7
-101	__rotate_rs0	1	1	199	1	2
-102	__constVal15	2	0	200	1	3
-103	____ReadLSBytes1_return	1	1	201	1	3
-104	__RLSBytesCount1	1	1	202	1	7
-105	__constVal13	2	0	203	1	1
-106	__PFTmp	1	1	204	1	1
-107	__constVal2	2	0	205	1	4
-108	__RLSBIterations1	1	1	206	1	4
-109	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	207	1	2
-110	__ResetSensorPort	1	1	208	1	5
-111	__ResetSensorTmp	1	1	209	1	2
-112	__constVal3	2	0	210	1	13
-113	____RotateMotor3_return	1	1	211	1	3
-114	____RotateMotor3_sign_tmp	2	1	212	1	4
-115	____ResetSensorSubroutine_return	1	1	213	1	5
-116	__rotate_thePower0	2	1	214	1	4
-117	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	215	1	2
-118	__CLSRArgs1	8	0	4	12	5
-119	__CLSRArgs1.Result	2	1	216	1	5
-120	__CLSRArgs1.Port	1	1	217	1	5
-121	__CLSRArgs1.Buffer	7	0	218	4	5
-122	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
-123	__CLSRArgs1.BufferLen	1	1	220	1	5
-124	__CLSCSArgs1	8	0	3	4	4
-125	__CLSCSArgs1.Result	2	1	224	1	4
-126	__CLSCSArgs1.Port	1	1	225	1	4
-127	__CLSCSArgs1.BytesReady	1	1	226	1	4
-128	__CLSWArgs1	8	0	4	12	5
-129	__CLSWArgs1.Result	2	1	228	1	5
-130	__CLSWArgs1.Port	1	1	229	1	5
-131	__CLSWArgs1.Buffer	7	0	230	4	5
-132	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
-133	__CLSWArgs1.ReturnLen	1	1	232	1	5
-134	__rotate_ports3	7	0	234	4	6
-135	__rotate_ports3.__rotate_ports3_type	1	0	0	1	0
-136	__rotate_ports0	7	0	236	4	7
-137	__rotate_ports0.__rotate_ports0_type	1	0	0	1	0
-138	__OUT_AB	7	0	238	4	6
-139	__OUT_AB.__OUT_AB_type	1	0	0	1	0
-140	__RLSReadBuf1	7	0	240	4	8
-141	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
-142	__RLSLastGoodRead1	7	0	242	4	2
-143	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
-144	__RLSBbufLSWrite1	7	0	244	4	1
-145	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+0	__CLSCSMutex1	9	0	0	4	2
+1	__rotate_theAngle0	5	1	4	4	2
+2	__rotate_angle3	6	1	8	4	5
+3	__signed_stack_001avoid	6	1	12	4	4
+4	__DU0SetSensorLowspeed_inline_lightavoid	5	1	16	4	2
+5	__CLSRMutex1	9	0	20	4	2
+6	__Wait_7qG2_ms_7qG2_000_inline_lightavoid	5	1	24	4	2
+7	__CLSWMutex1	9	0	28	4	2
+8	__signed_stack_001dropOff	6	1	32	4	4
+9	__Wait_7qG2_ms_7qG2_000_inline_openClaw	5	1	36	4	2
+10	__Wait_7qG2_ms_7qG2_000_inline_closeClaw	5	1	40	4	2
+11	__rotate_theAngle3	5	1	44	4	2
+12	__Wait_7qG2_ms_7qG2_000_inline_avoid	5	1	48	4	2
+13	__signed_stack_001lightavoid	6	1	52	4	2
+14	__signed_stack_001findDumpsite	6	1	56	4	6
+15	__signed_stack_001main	6	1	60	4	6
+16	__ResetSensorMutex	9	0	64	4	8
+17	__Wait_7qG2_ms_7qG2_000_inline_dropOff	5	1	68	4	2
+18	__rotate_angle0	6	1	72	4	7
+19	__D0dropOff	6	1	76	4	4
+20	__D0lightavoid	6	1	80	4	9
+21	__D0closeClaw	6	1	84	4	2
+22	__D0findDumpsite	6	1	88	4	15
+23	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	92	4	4
+24	__rotateMutex0	9	0	96	4	8
+25	__OnRevMutex	9	0	100	4	12
+26	__D0avoid	6	1	104	4	11
+27	__RLSBmutex1	9	0	108	4	4
+28	__D0SetSensorLowspeed_inline_avoid	6	1	112	4	3
+29	__D0SetSensorLowspeed_inline_lightavoid	6	1	116	4	3
+30	__DU0SetSensorLowspeed_inline_avoid	5	1	120	4	2
+31	__D0openClaw	6	1	124	4	2
+32	__D0main	6	1	128	4	14
+33	__DU0SetSensorLight_inline_findDumpsite	5	1	132	4	2
+34	__D0SetSensorLight_inline_findDumpsite	6	1	136	4	3
+35	__rotate_OldRotCount3	4	1	140	2	2
+36	__rotate_RotCount3	4	1	142	2	4
+37	__avoid_7qG2_THRESHOLD_7qG2_000	4	1	144	2	2
+38	__findDumpsite_7qG2_THRESHOLD_7qG2_000	4	1	146	2	2
+39	__findDumpsite_7qG2_x_7qG2_000	4	1	148	2	3
+40	__lightavoid_7qG2_THRESHOLD_7qG2_000	4	1	150	2	2
+41	__rotate_RotCount0	4	1	152	2	4
+42	__rotate_OldRotCount0	4	1	154	2	2
+43	__constValNeg360	4	0	156	2	1
+44	__zfSetSensorLowspeed_inline_avoid	1	1	158	1	2
+45	__findDumpsite_return	1	1	159	1	3
+46	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	160	1	2
+47	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	161	1	2
+48	__SetSensorColorFull_7qG2_port_7qG2_000_inline_main	1	1	162	1	4
+49	____initialize_global_data_return	1	1	163	1	3
+50	__dropOff_return	1	1	164	1	3
+51	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	165	1	2
+52	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	166	1	2
+53	__zfmain	1	1	167	1	8
+54	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_findDumpsite	1	1	168	1	2
+55	__SetSensorLight_7qG2_bActive_7qG2_000_inline_findDumpsite	1	1	169	1	2
+56	__zfSetSensorLight_inline_findDumpsite	1	1	170	1	2
+57	__SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite	1	1	171	1	4
+58	__zflightavoid	1	1	172	1	3
+59	__zfSetSensorLowspeed_inline_lightavoid	1	1	173	1	2
+60	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_avoid	1	1	174	1	2
+61	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_avoid	1	1	175	1	4
+62	__avoid_return	1	1	176	1	3
+63	__openClaw_return	1	1	177	1	3
+64	__lightavoid_return	1	1	178	1	3
+65	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_avoid	1	1	179	1	2
+66	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_avoid	1	1	180	1	2
+67	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_avoid	1	1	181	1	2
+68	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_avoid	1	1	182	1	2
+69	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_avoid	1	1	183	1	2
+70	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_lightavoid	1	1	184	1	2
+71	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_lightavoid	1	1	185	1	2
+72	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_lightavoid	1	1	186	1	2
+73	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_lightavoid	1	1	187	1	2
+74	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_lightavoid	1	1	188	1	2
+75	__constVal96	2	0	189	1	24
+76	__constVal63	2	0	190	1	20
+77	__closeClaw_return	1	1	191	1	3
+78	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_lightavoid	1	1	192	1	2
+79	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_lightavoid	1	1	193	1	4
+80	__zffindDumpsite	1	1	194	1	9
+81	__rotate_stop3	1	1	195	1	2
+82	__rotate_turnpct3	2	1	196	1	3
+83	__rotate_theUF3	1	1	197	1	6
+84	__rotate_sync3	1	1	198	1	2
+85	__rotate_theTurnPct0	2	1	199	1	4
+86	__rotate_power3	1	1	200	1	4
+87	__rotate_firstPort3	1	1	201	1	5
+88	__rotate_theRVI3	1	1	202	1	2
+89	__rotate_theRVD3	1	1	203	1	2
+90	__rotate_rs3	1	1	204	1	2
+91	__rotate_theRVP3	1	1	205	1	2
+92	__rotate_theOM3	1	1	206	1	7
+93	__rotate_theRM3	1	1	207	1	4
+94	__rotate_theRS3	1	1	208	1	3
+95	__rotate_thePower0	2	1	209	1	4
+96	__rotate_stop0	1	1	210	1	4
+97	__rotate_turnpct0	2	1	211	1	5
+98	__rotate_theUF0	1	1	212	1	6
+99	__rotate_sync0	1	1	213	1	4
+100	__OnRev_Tmp	2	1	214	1	12
+101	__rotate_power0	1	1	215	1	6
+102	__rotate_firstPort0	1	1	216	1	5
+103	__rotate_theRVI0	1	1	217	1	4
+104	__rotate_theRVD0	1	1	218	1	4
+105	__rotate_rs0	1	1	219	1	2
+106	__rotate_theRVP0	1	1	220	1	4
+107	__rotate_theOM0	1	1	221	1	7
+108	__rotate_theRM0	1	1	222	1	4
+109	__rotate_theRS0	1	1	223	1	3
+110	__PFTmp	1	1	224	1	1
+111	__constVal13	2	0	225	1	1
+112	____ResetSensorSubroutine_return	1	1	226	1	6
+113	__zfavoid	1	1	227	1	3
+114	__ResetSensorTmp	1	1	228	1	2
+115	__constVal2	2	0	229	1	4
+116	__RLSBytesCount1	1	1	230	1	8
+117	__RLSBResult1	2	1	231	1	7
+118	____ReadLSBytes1_return	1	1	232	1	4
+119	__RLSBIterations1	1	1	233	1	4
+120	__constVal15	2	0	234	1	5
+121	__ResetSensorPort	1	1	235	1	6
+122	____RotateMotor0_sign_tmp	2	1	236	1	4
+123	__constVal32	2	0	237	1	70
+124	____RotateMotor0_return	1	1	238	1	5
+125	__rotate_thePower3	2	1	239	1	4
+126	__rotate_theTurnPct3	2	1	240	1	4
+127	__constVal1	2	0	241	1	16
+128	____RotateMotor3_sign_tmp	2	1	242	1	4
+129	__constVal3	2	0	243	1	22
+130	____RotateMotor3_return	1	1	244	1	3
+131	__constVal0	2	1	245	1	97
+132	__constVal50	2	0	246	1	2
+133	__CLSRArgs1	8	0	4	12	5
+134	__CLSRArgs1.Result	2	1	248	1	5
+135	__CLSRArgs1.Port	1	1	249	1	5
+136	__CLSRArgs1.Buffer	7	0	250	4	5
+137	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+138	__CLSRArgs1.BufferLen	1	1	252	1	5
+139	__CLSWArgs1	8	0	4	12	5
+140	__CLSWArgs1.Result	2	1	256	1	5
+141	__CLSWArgs1.Port	1	1	257	1	5
+142	__CLSWArgs1.Buffer	7	0	258	4	5
+143	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+144	__CLSWArgs1.ReturnLen	1	1	260	1	5
+145	__CLSCSArgs1	8	0	3	4	4
+146	__CLSCSArgs1.Result	2	1	264	1	4
+147	__CLSCSArgs1.Port	1	1	265	1	4
+148	__CLSCSArgs1.BytesReady	1	1	266	1	4
+149	__RLSLastGoodRead1	7	0	268	4	2
+150	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+151	__rotate_ports3	7	0	270	4	6
+152	__rotate_ports3.__rotate_ports3_type	1	0	0	1	0
+153	__OUT_AB	7	0	272	4	11
+154	__OUT_AB.__OUT_AB_type	1	0	0	1	0
+155	__RLSReadBuf1	7	0	274	4	10
+156	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+157	__RLSBbufLSWrite1	7	0	276	4	2
+158	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+159	__rotate_ports0	7	0	278	4	8
+160	__rotate_ports0.__rotate_ports0_type	1	0	0	1	0
 #SOURCES
 Clump	Line	PC	Source
-0	65	0	#line 65 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	66	0		subcall __initialize_global_data, ____initialize_global_data_return
-0	65	2	#line 65 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	65	2	#line 65 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	66	2		set __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
-0	65	5	#line 65 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+0	87	0	#line 87 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	88	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	87	2	#line 87 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	87	2	#line 87 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	88	2		set __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
+0	87	5	#line 87 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 0	3802	5	#line 3802 "NXCDefs.h"
 0	3803	5	#pragma macro 6
 0	3803	5		setin __constVal13, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main, 0
@@ -162,75 +177,116 @@ Clump	Line	PC	Source
 0	3803	14		mov __ResetSensorPort, __SetSensorColorFull_7qG2_port_7qG2_000_inline_main
 0	3803	16		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
 0	3803	18		release __ResetSensorMutex
-0	4457	19	#line 4457 "NXCDefs.h"
+0	4816	19	#line 4816 "NXCDefs.h"
 0	3802	19	#line 3802 "NXCDefs.h"
-0	66	19	#line 66 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	66	19	#line 66 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	67	19		set __D0main, 1
-0	67	22	#line 67 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	68	22		tst 5, __zfmain, __D0main
-0	67	25	#line 67 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	68	25		brtst 4, __NXC_Label_547, __zfmain
-0	67	28	#line 67 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	68	28		set __D0main, 75
-0	68	31	#line 68 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	69	31	#pragma macro 7
-0	69	31		setout __OUT_AB, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4474	54	#line 4474 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	68	54	#line 68 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	69	54	#line 69 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	70	54		subcall avoid, __avoid_return
-0	69	56	#line 69 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	69	56	#line 69 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	70	56		getin __signed_stack_001main, __constVal0, 4
-0	69	60	#line 69 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	69	60	#line 69 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	70	60		set __D0main, 2
-0	69	63	#line 69 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	70	63		cmp 4, __zfmain, __signed_stack_001main, __D0main
-0	69	67	#line 69 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	70	67		mov __D0main, __zfmain
-0	69	69	#line 69 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	70	69		brtst 5, __NXC_Label_552, __zfmain
-0	69	72	#line 69 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	70	72		mov __signed_stack_001main, __D0main
-0	69	74	#line 69 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	70	74		getin __signed_stack_002main, __constVal0, 4
-0	69	78	#line 69 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	69	78	#line 69 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	70	78		set __D0main, 4
-0	69	81	#line 69 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	70	81		cmp 4, __zfmain, __signed_stack_002main, __D0main
-0	69	85	#line 69 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	69	85	#line 69 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	70	85		or __D0main, __signed_stack_001main, __zfmain
-0	70	89	#line 70 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	71	89		tst 5, __zfmain, __D0main
-0	70	92	#line 70 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	71	92		brtst 4, __NXC_Label_555, __zfmain
-0	71	95	#line 71 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	72	95	#pragma macro 7
-0	72	95		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-0	4513	118	#line 4513 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	71	118	#line 71 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	72	118	#line 72 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	73	118		subcall closeClaw, __closeClaw_return
-0	72	120	#line 72 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	72	120	#line 72 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	73	120		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
-0	72	123	#line 72 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	7921	123	#line 7921 "NXCDefs.h"
-0	7922	123		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
-0	7921	126	#line 7921 "NXCDefs.h"
-0	73	126	#line 73 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	74	126	#line 74 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	75	126		subcall findDumpsite, __findDumpsite_return
-0	74	128	#line 74 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	77	128	#line 77 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	81	128	#line 81 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	82	128		jmp __NXC_Label_546
-0	81	130	#line 81 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-0	82	130		exit -1, -1
+0	88	19	#line 88 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	88	19	#line 88 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	89	19		set __D0main, 1
+0	89	22	#line 89 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	90	22		tst 5, __zfmain, __D0main
+0	89	25	#line 89 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	90	25		brtst 4, __NXC_Label_566, __zfmain
+0	89	28	#line 89 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	90	28		set __D0main, 75
+0	90	31	#line 90 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	91	31	#pragma macro 7
+0	91	31		setout __OUT_AB, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4833	54	#line 4833 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	90	54	#line 90 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	91	54	#line 91 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	92	54		subcall avoid, __avoid_return
+0	91	56	#line 91 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	91	56	#line 91 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	92	56		getin __signed_stack_001main, __constVal0, 4
+0	91	60	#line 91 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	91	60	#line 91 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	92	60		set __D0main, 2
+0	91	63	#line 91 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	92	63		cmp 4, __zfmain, __signed_stack_001main, __D0main
+0	91	67	#line 91 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	92	67		mov __D0main, __zfmain
+0	92	69	#line 92 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	93	69		brtst 4, __NXC_Label_573, __zfmain
+0	93	72	#line 93 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	94	72	#pragma macro 7
+0	94	72		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4853	95	#line 4853 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	93	95	#line 93 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	94	95	#line 94 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	95	95		subcall closeClaw, __closeClaw_return
+0	94	97	#line 94 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	94	97	#line 94 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	95	97		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	94	100	#line 94 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	7921	100	#line 7921 "NXCDefs.h"
+0	7922	100		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	103	#line 7921 "NXCDefs.h"
+0	95	103	#line 95 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	96	103	#line 96 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	97	103		subcall findDumpsite, __findDumpsite_return
+0	96	105	#line 96 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	98	105	#line 98 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	99	105		jmp __NXC_Label_576
+0	98	107	#line 98 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	99	107		getin __signed_stack_001main, __constVal0, 4
+0	98	111	#line 98 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	98	111	#line 98 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	99	111		set __D0main, 4
+0	98	114	#line 98 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	99	114		cmp 4, __zfmain, __signed_stack_001main, __D0main
+0	98	118	#line 98 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	99	118		mov __D0main, __zfmain
+0	99	120	#line 99 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	100	120		brtst 4, __NXC_Label_579, __zfmain
+0	99	123	#line 99 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	100	123		set __D0main, 75
+0	100	126	#line 100 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	101	126	#pragma macro 10
+0	101	126		acquire __OnRevMutex
+0	101	127		neg __OnRev_Tmp, __D0main
+0	101	130		setout __OUT_AB, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	101	153		release __OnRevMutex
+0	4897	154	#line 4897 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	100	154	#line 100 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	100	154	#line 100 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	101	154		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	100	157	#line 100 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	7921	157	#line 7921 "NXCDefs.h"
+0	7922	157		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	160	#line 7921 "NXCDefs.h"
+0	101	160	#line 101 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	102	160	#line 102 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	103	160	#pragma macro 7
+0	103	160		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4910	183	#line 4910 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	102	183	#line 102 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	102	183	#line 102 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	103	183		set __signed_stack_001main, 50
+0	102	186	#line 102 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	102	186	#line 102 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	103	186		set __D0main, 360
+0	103	189	#line 103 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	104	189	#pragma macro 33
+0	104	189		acquire __rotateMutex0
+0	104	190		arrbuild __rotate_ports0, __constVal0
+0	104	194		mov __rotate_power0, __signed_stack_001main
+0	104	196		mov __rotate_angle0, __D0main
+0	104	198		mov __rotate_turnpct0, __constVal0
+0	104	200		mov __rotate_sync0, __constVal0
+0	104	202		mov __rotate_stop0, __constVal1
+0	104	204		mov __rotate_theRVP0, __constVal32
+0	104	206		mov __rotate_theRVI0, __constVal0
+0	104	208		mov __rotate_theRVD0, __constVal96
+0	104	210		subcall __RotateMotor0, ____RotateMotor0_return
+0	104	212		release __rotateMutex0
+0	4923	213	#line 4923 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	103	213	#line 103 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	105	213	#line 105 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	107	213	#line 107 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	111	213	#line 111 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	112	213		jmp __NXC_Label_565
+0	111	215	#line 111 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+0	112	215		exit -1, -1
 1	4476	0		brtst 4, __rotate_Done0, __rotate_angle0
 1	4477	3		set ____RotateMotor0_sign_tmp, 0
 1	4477	6		brtst EQ, __sign_0, __rotate_angle0
@@ -359,58 +415,58 @@ Clump	Line	PC	Source
 4	5731	78		mov __RLSReadBuf1, __RLSLastGoodRead1
 4	5733	80		arrsize __RLSBytesCount1, __RLSReadBuf1
 4	5735	83		subret ____ReadLSBytes1_return
-5	2	0	#line 2 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+5	2	0	#line 2 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 5	3	0		set __D0closeClaw, 50
-5	3	3	#line 3 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+5	3	3	#line 3 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 5	4	3	#pragma macro 7
 5	4	3		setout __constVal2, 2, __D0closeClaw, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	3985	26	#line 3985 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-5	3	26	#line 3 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-5	3	26	#line 3 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+5	4153	26	#line 4153 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+5	3	26	#line 3 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+5	3	26	#line 3 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 5	4	26		set __Wait_7qG2_ms_7qG2_000_inline_closeClaw, 500
-5	3	29	#line 3 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+5	3	29	#line 3 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 5	7921	29	#line 7921 "NXCDefs.h"
 5	7922	29		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_closeClaw
 5	7921	32	#line 7921 "NXCDefs.h"
-5	4	32	#line 4 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-5	6	32	#line 6 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+5	4	32	#line 4 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+5	6	32	#line 6 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 5	7	32	#pragma macro 7
 5	7	32		setout __constVal2, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-5	4002	55	#line 4002 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-5	6	55	#line 6 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-5	8	55	#line 8 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+5	4170	55	#line 4170 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+5	6	55	#line 6 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+5	8	55	#line 8 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 5	9	55		subret __closeClaw_return
-6	11	0	#line 11 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+6	11	0	#line 11 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 6	12	0		set __D0openClaw, 50
-6	12	3	#line 12 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+6	12	3	#line 12 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 6	13	3	#pragma macro 10
 6	13	3		acquire __OnRevMutex
 6	13	4		neg __OnRev_Tmp, __D0openClaw
 6	13	7		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
 6	13	30		release __OnRevMutex
-6	4014	31	#line 4014 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-6	12	31	#line 12 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-6	12	31	#line 12 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+6	4182	31	#line 4182 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+6	12	31	#line 12 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+6	12	31	#line 12 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 6	13	31		set __Wait_7qG2_ms_7qG2_000_inline_openClaw, 500
-6	12	34	#line 12 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+6	12	34	#line 12 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 6	7921	34	#line 7921 "NXCDefs.h"
 6	7922	34		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_openClaw
 6	7921	37	#line 7921 "NXCDefs.h"
-6	13	37	#line 13 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-6	14	37	#line 14 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+6	13	37	#line 13 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+6	14	37	#line 14 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 6	15	37	#pragma macro 7
 6	15	37		setout __constVal2, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-6	4031	60	#line 4031 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-6	14	60	#line 14 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-6	16	60	#line 16 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+6	4199	60	#line 4199 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+6	14	60	#line 14 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+6	16	60	#line 16 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 6	17	60		subret __openClaw_return
-7	20	0	#line 20 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+7	20	0	#line 20 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 7	21	0		set __avoid_7qG2_THRESHOLD_7qG2_000, 30
-7	20	3	#line 20 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-7	20	3	#line 20 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+7	20	3	#line 20 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	20	3	#line 20 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 7	21	3		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_avoid, 1
-7	20	6	#line 20 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-7	21	6	#line 21 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+7	20	6	#line 20 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	21	6	#line 21 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 7	22	6		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_avoid, __constVal1
 7	3758	8	#line 3758 "NXCDefs.h"
 7	3759	8		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_avoid, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_avoid
@@ -452,11 +508,11 @@ Clump	Line	PC	Source
 7	3695	44		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_avoid
 7	3695	46		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
 7	3695	48		release __ResetSensorMutex
-7	4139	49	#line 4139 "NXCDefs.h"
+7	4307	49	#line 4307 "NXCDefs.h"
 7	3694	49	#line 3694 "NXCDefs.h"
 7	3761	49	#line 3761 "NXCDefs.h"
-7	21	49	#line 21 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-7	21	49	#line 21 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+7	21	49	#line 21 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	21	49	#line 21 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 7	22	49	#pragma macro 26
 7	22	49		acquire __RLSBmutex1
 7	22	50		mov __RLSReadBuf1, __RLSBbufLSWrite1
@@ -465,250 +521,392 @@ Clump	Line	PC	Source
 7	22	58		subcall __ReadLSBytes1, ____ReadLSBytes1_return
 7	22	60		index __D0avoid, __RLSReadBuf1, 65535
 7	22	64		release __RLSBmutex1
-7	4144	65	#line 4144 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-7	21	65	#line 21 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+7	4312	65	#line 4312 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	21	65	#line 21 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 7	22	65		mov __signed_stack_001avoid, __D0avoid
-7	21	67	#line 21 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+7	21	67	#line 21 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 7	22	67		mov __D0avoid, __avoid_7qG2_THRESHOLD_7qG2_000
-7	21	69	#line 21 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+7	21	69	#line 21 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 7	22	69		cmp 0, __zfavoid, __signed_stack_001avoid, __D0avoid
-7	21	73	#line 21 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+7	21	73	#line 21 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 7	22	73		mov __D0avoid, __zfavoid
-7	22	75	#line 22 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+7	22	75	#line 22 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 7	23	75		brtst 4, __NXC_Label_503, __zfavoid
-7	23	78	#line 23 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
+7	23	78	#line 23 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
 7	24	78	#pragma macro 7
 7	24	78		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-7	4158	101	#line 4158 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-7	23	101	#line 23 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-7	23	101	#line 23 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-7	24	101		mov __signed_stack_001avoid, __constValNeg75
-7	23	103	#line 23 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-7	23	103	#line 23 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-7	24	103		set __D0avoid, 180
-7	24	106	#line 24 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-7	25	106	#pragma macro 33
-7	25	106		acquire __rotateMutex0
-7	25	107		arrbuild __rotate_ports0, __constVal0
-7	25	111		mov __rotate_power0, __signed_stack_001avoid
-7	25	113		mov __rotate_angle0, __D0avoid
-7	25	115		mov __rotate_turnpct0, __constVal0
-7	25	117		mov __rotate_sync0, __constVal0
-7	25	119		mov __rotate_stop0, __constVal1
-7	25	121		mov __rotate_theRVP0, __constVal32
-7	25	123		mov __rotate_theRVI0, __constVal0
-7	25	125		mov __rotate_theRVD0, __constVal96
-7	25	127		subcall __RotateMotor0, ____RotateMotor0_return
-7	25	129		release __rotateMutex0
-7	4171	130	#line 4171 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-7	24	130	#line 24 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-7	28	130	#line 28 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-7	28	130	#line 28 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-7	29	130		subret __avoid_return
-8	30	0	#line 30 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	31	0	#pragma macro 7
-8	31	0		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-8	4181	23	#line 4181 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	30	23	#line 30 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	31	23	#line 31 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	32	23		subcall openClaw, __openClaw_return
-8	31	25	#line 31 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	31	25	#line 31 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	32	25		set __Wait_7qG2_ms_7qG2_000_inline_dropOff, 1000
-8	31	28	#line 31 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	7921	28	#line 7921 "NXCDefs.h"
-8	7922	28		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_dropOff
-8	7921	31	#line 7921 "NXCDefs.h"
-8	32	31	#line 32 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	32	31	#line 32 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	33	31		set __signed_stack_001dropOff, 50
-8	32	34	#line 32 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	32	34	#line 32 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	33	34		mov __D0dropOff, __constValNeg180
-8	33	36	#line 33 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	34	36	#pragma macro 35
-8	34	36		acquire __rotateMutex0
-8	34	37		mov __rotate_ports3, __OUT_AB
-8	34	39		mov __rotate_power3, __signed_stack_001dropOff
-8	34	41		mov __rotate_angle3, __D0dropOff
-8	34	43		mov __rotate_turnpct3, __constVal0
-8	34	45		mov __rotate_sync3, __constVal0
-8	34	47		mov __rotate_stop3, __constVal1
-8	34	49		mov __rotate_theRVP3, __constVal32
-8	34	51		mov __rotate_theRVI3, __constVal0
-8	34	53		mov __rotate_theRVD3, __constVal96
-8	34	55		subcall __RotateMotor3, ____RotateMotor3_return
-8	34	57		release __rotateMutex0
-8	4211	58	#line 4211 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	33	58	#line 33 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	33	58	#line 33 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	34	58		set __signed_stack_001dropOff, 50
-8	33	61	#line 33 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	33	61	#line 33 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	34	61		set __D0dropOff, 360
-8	35	64	#line 35 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	36	64	#pragma macro 33
-8	36	64		acquire __rotateMutex0
-8	36	65		arrbuild __rotate_ports0, __constVal0
-8	36	69		mov __rotate_power0, __signed_stack_001dropOff
-8	36	71		mov __rotate_angle0, __D0dropOff
-8	36	73		mov __rotate_turnpct0, __constVal0
-8	36	75		mov __rotate_sync0, __constVal0
-8	36	77		mov __rotate_stop0, __constVal1
-8	36	79		mov __rotate_theRVP0, __constVal32
-8	36	81		mov __rotate_theRVI0, __constVal0
-8	36	83		mov __rotate_theRVD0, __constVal96
-8	36	85		subcall __RotateMotor0, ____RotateMotor0_return
-8	36	87		release __rotateMutex0
-8	4224	88	#line 4224 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	35	88	#line 35 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	38	88	#line 38 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-8	39	88		subret __dropOff_return
-9	43	0	#line 43 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	44	0		set __findDumpsite_7qG2_THRESHOLD_7qG2_000, 50
-9	43	3	#line 43 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	45	3	#line 45 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	46	3		set __findDumpsite_7qG2_x_7qG2_000, 0
-9	45	6	#line 45 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	45	6	#line 45 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	46	6		set __SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite, 3
-9	45	9	#line 45 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	46	9	#line 46 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	47	9		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_findDumpsite, __constVal1
-9	3729	11	#line 3729 "NXCDefs.h"
-9	3730	11		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite
-9	3729	13	#line 3729 "NXCDefs.h"
-9	3729	13	#line 3729 "NXCDefs.h"
-9	3730	13		mov __DU0SetSensorLight_inline_findDumpsite, __SetSensorLight_7qG2_bActive_7qG2_000_inline_findDumpsite
-9	3729	15	#line 3729 "NXCDefs.h"
-9	3730	15		tst 5, __zfSetSensorLight_inline_findDumpsite, __DU0SetSensorLight_inline_findDumpsite
-9	3729	18	#line 3729 "NXCDefs.h"
-9	3730	18		brtst 4, __001__NXC_Label_4, __zfSetSensorLight_inline_findDumpsite
-9	3729	21	#line 3729 "NXCDefs.h"
-9	3730	21		set __D0SetSensorLight_inline_findDumpsite, 5
-9	3729	24	#line 3729 "NXCDefs.h"
-9	3730	24		jmp __001__NXC_Label_5
-9	3729	26	#line 3729 "NXCDefs.h"
-9	3730	26		set __D0SetSensorLight_inline_findDumpsite, 6
-9	3729	29	#line 3729 "NXCDefs.h"
-9	3730	29		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __D0SetSensorLight_inline_findDumpsite
-9	3663	31	#line 3663 "NXCDefs.h"
-9	3664	31		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, 0
-9	3663	35	#line 3663 "NXCDefs.h"
-9	3730	35	#line 3730 "NXCDefs.h"
-9	3730	35	#line 3730 "NXCDefs.h"
-9	3731	35		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite
-9	3730	37	#line 3730 "NXCDefs.h"
-9	3730	37	#line 3730 "NXCDefs.h"
-9	3731	37		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_findDumpsite, 128
-9	3730	40	#line 3730 "NXCDefs.h"
-9	3676	40	#line 3676 "NXCDefs.h"
-9	3677	40		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, 1
-9	3676	44	#line 3676 "NXCDefs.h"
-9	3731	44	#line 3731 "NXCDefs.h"
-9	3731	44	#line 3731 "NXCDefs.h"
-9	3732	44		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite
-9	3731	46	#line 3731 "NXCDefs.h"
-9	3694	46	#line 3694 "NXCDefs.h"
-9	3695	46	#pragma macro 4
-9	3695	46		acquire __ResetSensorMutex
-9	3695	47		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite
-9	3695	49		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
-9	3695	51		release __ResetSensorMutex
-9	4342	52	#line 4342 "NXCDefs.h"
-9	3694	52	#line 3694 "NXCDefs.h"
-9	3732	52	#line 3732 "NXCDefs.h"
-9	46	52	#line 46 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	46	52	#line 46 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	47	52		mov __signed_stack_001findDumpsite, __findDumpsite_7qG2_x_7qG2_000
-9	46	54	#line 46 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	46	54	#line 46 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	47	54		set __D0findDumpsite, 0
-9	46	57	#line 46 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	47	57		cmp 4, __zffindDumpsite, __signed_stack_001findDumpsite, __D0findDumpsite
-9	46	61	#line 46 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	47	61		mov __D0findDumpsite, __zffindDumpsite
-9	47	63	#line 47 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	48	63		brtst 4, __NXC_Label_525, __zffindDumpsite
-9	47	66	#line 47 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	48	66		getin __signed_stack_001findDumpsite, __constVal3, 4
-9	47	70	#line 47 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	47	70	#line 47 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	48	70		mov __D0findDumpsite, __findDumpsite_7qG2_THRESHOLD_7qG2_000
-9	47	72	#line 47 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	48	72		cmp 1, __zffindDumpsite, __signed_stack_001findDumpsite, __D0findDumpsite
-9	47	76	#line 47 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	48	76		mov __D0findDumpsite, __zffindDumpsite
-9	48	78	#line 48 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	49	78		brtst 4, __NXC_Label_530, __zffindDumpsite
-9	48	81	#line 48 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	49	81		getin __signed_stack_001findDumpsite, __constVal3, 4
-9	48	85	#line 48 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	48	85	#line 48 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	49	85		set __D0findDumpsite, 90
-9	48	88	#line 48 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	49	88		cmp 1, __zffindDumpsite, __signed_stack_001findDumpsite, __D0findDumpsite
-9	48	92	#line 48 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	49	92		mov __D0findDumpsite, __zffindDumpsite
-9	49	94	#line 49 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	50	94		brtst 4, __NXC_Label_533, __zffindDumpsite
-9	50	97	#line 50 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	51	97		subcall dropOff, __dropOff_return
-9	50	99	#line 50 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	51	99	#line 51 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	52	99		set __findDumpsite_7qG2_x_7qG2_000, 1
-9	51	102	#line 51 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	51	102	#line 51 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	53	102	#line 53 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	54	102		jmp __NXC_Label_536
-9	53	104	#line 53 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	54	104		set __D0findDumpsite, 50
-9	54	107	#line 54 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	55	107	#pragma macro 7
-9	55	107		setout __OUT_AB, 2, __D0findDumpsite, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-9	4407	130	#line 4407 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	54	130	#line 54 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	55	130	#line 55 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	56	130		subcall avoid, __avoid_return
-9	55	132	#line 55 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	57	132	#line 57 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	58	132	#line 58 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	59	132		jmp __NXC_Label_539
-9	58	134	#line 58 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	59	134		set __D0findDumpsite, 50
-9	59	137	#line 59 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	60	137	#pragma macro 7
-9	60	137		setout __constVal0, 2, __D0findDumpsite, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-9	4422	160	#line 4422 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	59	160	#line 59 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	59	160	#line 59 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	60	160		set __D0findDumpsite, 50
-9	60	163	#line 60 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	61	163	#pragma macro 10
-9	61	163		acquire __OnRevMutex
-9	61	164		neg __OnRev_Tmp, __D0findDumpsite
-9	61	167		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
-9	61	190		release __OnRevMutex
-9	4429	191	#line 4429 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	60	191	#line 60 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	62	191	#line 62 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	64	191	#line 64 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	65	191		jmp __NXC_Label_524
-9	64	193	#line 64 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	64	193	#line 64 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-9	65	193		subret __findDumpsite_return
-10	82	0	#line 82 "C:\Users\Paul\AppData\Local\Temp\temp.nxc"
-10	83	0		subret ____initialize_global_data_return
+7	4326	101	#line 4326 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	23	101	#line 23 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	23	101	#line 23 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	24	101		set __D0avoid, 50
+7	24	104	#line 24 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	25	104	#pragma macro 10
+7	25	104		acquire __OnRevMutex
+7	25	105		neg __OnRev_Tmp, __D0avoid
+7	25	108		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	25	131		release __OnRevMutex
+7	4333	132	#line 4333 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	24	132	#line 24 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	24	132	#line 24 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	25	132		set __D0avoid, 75
+7	27	135	#line 27 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	28	135	#pragma macro 10
+7	28	135		acquire __OnRevMutex
+7	28	136		neg __OnRev_Tmp, __D0avoid
+7	28	139		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	28	162		release __OnRevMutex
+7	4340	163	#line 4340 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	27	163	#line 27 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	27	163	#line 27 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	28	163		set __Wait_7qG2_ms_7qG2_000_inline_avoid, 1000
+7	27	166	#line 27 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	7921	166	#line 7921 "NXCDefs.h"
+7	7922	166		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_avoid
+7	7921	169	#line 7921 "NXCDefs.h"
+7	28	169	#line 28 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	29	169	#line 29 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	30	169	#pragma macro 7
+7	30	169		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	4357	192	#line 4357 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	29	192	#line 29 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	29	192	#line 29 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	30	192		set __signed_stack_001avoid, 50
+7	29	195	#line 29 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	29	195	#line 29 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	30	195		set __D0avoid, 135
+7	31	198	#line 31 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	32	198	#pragma macro 33
+7	32	198		acquire __rotateMutex0
+7	32	199		arrbuild __rotate_ports0, __constVal0
+7	32	203		mov __rotate_power0, __signed_stack_001avoid
+7	32	205		mov __rotate_angle0, __D0avoid
+7	32	207		mov __rotate_turnpct0, __constVal0
+7	32	209		mov __rotate_sync0, __constVal0
+7	32	211		mov __rotate_stop0, __constVal1
+7	32	213		mov __rotate_theRVP0, __constVal32
+7	32	215		mov __rotate_theRVI0, __constVal0
+7	32	217		mov __rotate_theRVD0, __constVal96
+7	32	219		subcall __RotateMotor0, ____RotateMotor0_return
+7	32	221		release __rotateMutex0
+7	4370	222	#line 4370 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	31	222	#line 31 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	35	222	#line 35 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	35	222	#line 35 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+7	36	222		subret __avoid_return
+8	39	0	#line 39 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	40	0		set __lightavoid_7qG2_THRESHOLD_7qG2_000, 30
+8	39	3	#line 39 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	39	3	#line 39 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	40	3		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_lightavoid, 1
+8	39	6	#line 39 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	40	6	#line 40 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	41	6		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_lightavoid, __constVal1
+8	3758	8	#line 3758 "NXCDefs.h"
+8	3759	8		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_lightavoid, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_lightavoid
+8	3758	10	#line 3758 "NXCDefs.h"
+8	3758	10	#line 3758 "NXCDefs.h"
+8	3759	10		mov __DU0SetSensorLowspeed_inline_lightavoid, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_lightavoid
+8	3758	12	#line 3758 "NXCDefs.h"
+8	3759	12		tst 5, __zfSetSensorLowspeed_inline_lightavoid, __DU0SetSensorLowspeed_inline_lightavoid
+8	3758	15	#line 3758 "NXCDefs.h"
+8	3759	15		brtst 4, __005__NXC_Label_36, __zfSetSensorLowspeed_inline_lightavoid
+8	3758	18	#line 3758 "NXCDefs.h"
+8	3759	18		set __D0SetSensorLowspeed_inline_lightavoid, 11
+8	3758	21	#line 3758 "NXCDefs.h"
+8	3759	21		jmp __005__NXC_Label_37
+8	3758	23	#line 3758 "NXCDefs.h"
+8	3759	23		set __D0SetSensorLowspeed_inline_lightavoid, 10
+8	3758	26	#line 3758 "NXCDefs.h"
+8	3759	26		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_lightavoid, __D0SetSensorLowspeed_inline_lightavoid
+8	3663	28	#line 3663 "NXCDefs.h"
+8	3664	28		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_lightavoid, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_lightavoid, 0
+8	3663	32	#line 3663 "NXCDefs.h"
+8	3759	32	#line 3759 "NXCDefs.h"
+8	3759	32	#line 3759 "NXCDefs.h"
+8	3760	32		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_lightavoid, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_lightavoid
+8	3759	34	#line 3759 "NXCDefs.h"
+8	3759	34	#line 3759 "NXCDefs.h"
+8	3760	34		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_lightavoid, 0
+8	3759	37	#line 3759 "NXCDefs.h"
+8	3676	37	#line 3676 "NXCDefs.h"
+8	3677	37		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_lightavoid, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_lightavoid, 1
+8	3676	41	#line 3676 "NXCDefs.h"
+8	3760	41	#line 3760 "NXCDefs.h"
+8	3760	41	#line 3760 "NXCDefs.h"
+8	3761	41		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_lightavoid, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_lightavoid
+8	3760	43	#line 3760 "NXCDefs.h"
+8	3694	43	#line 3694 "NXCDefs.h"
+8	3695	43	#pragma macro 4
+8	3695	43		acquire __ResetSensorMutex
+8	3695	44		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_lightavoid
+8	3695	46		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+8	3695	48		release __ResetSensorMutex
+8	4480	49	#line 4480 "NXCDefs.h"
+8	3694	49	#line 3694 "NXCDefs.h"
+8	3761	49	#line 3761 "NXCDefs.h"
+8	40	49	#line 40 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	40	49	#line 40 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	41	49	#pragma macro 26
+8	41	49		acquire __RLSBmutex1
+8	41	50		mov __RLSReadBuf1, __RLSBbufLSWrite1
+8	41	52		set __RLSBytesCount1, 1
+8	41	55		wait2 NA, __constVal15
+8	41	58		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+8	41	60		index __D0lightavoid, __RLSReadBuf1, 65535
+8	41	64		release __RLSBmutex1
+8	4485	65	#line 4485 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	40	65	#line 40 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	41	65		mov __signed_stack_001lightavoid, __D0lightavoid
+8	40	67	#line 40 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	41	67		mov __D0lightavoid, __lightavoid_7qG2_THRESHOLD_7qG2_000
+8	40	69	#line 40 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	41	69		cmp 0, __zflightavoid, __signed_stack_001lightavoid, __D0lightavoid
+8	40	73	#line 40 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	41	73		mov __D0lightavoid, __zflightavoid
+8	41	75	#line 41 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	42	75		brtst 4, __NXC_Label_520, __zflightavoid
+8	42	78	#line 42 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	43	78	#pragma macro 7
+8	43	78		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	4499	101	#line 4499 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	42	101	#line 42 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	42	101	#line 42 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	43	101		set __D0lightavoid, 50
+8	43	104	#line 43 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	44	104	#pragma macro 7
+8	44	104		setout __constVal0, 2, __D0lightavoid, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	4506	127	#line 4506 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	43	127	#line 43 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	43	127	#line 43 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	44	127		set __D0lightavoid, 50
+8	44	130	#line 44 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	45	130	#pragma macro 10
+8	45	130		acquire __OnRevMutex
+8	45	131		neg __OnRev_Tmp, __D0lightavoid
+8	45	134		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	45	157		release __OnRevMutex
+8	4513	158	#line 4513 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	44	158	#line 44 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	44	158	#line 44 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	45	158		set __Wait_7qG2_ms_7qG2_000_inline_lightavoid, 250
+8	44	161	#line 44 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	7921	161	#line 7921 "NXCDefs.h"
+8	7922	161		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_lightavoid
+8	7921	164	#line 7921 "NXCDefs.h"
+8	45	164	#line 45 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	46	164	#line 46 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	47	164	#pragma macro 7
+8	47	164		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+8	4530	187	#line 4530 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	46	187	#line 46 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	50	187	#line 50 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	50	187	#line 50 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+8	51	187		subret __lightavoid_return
+9	52	0	#line 52 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	53	0	#pragma macro 7
+9	53	0		setout __OUT_AB, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	4540	23	#line 4540 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	52	23	#line 52 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	53	23	#line 53 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	54	23		subcall openClaw, __openClaw_return
+9	53	25	#line 53 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	53	25	#line 53 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	54	25		set __Wait_7qG2_ms_7qG2_000_inline_dropOff, 1000
+9	53	28	#line 53 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	7921	28	#line 7921 "NXCDefs.h"
+9	7922	28		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_dropOff
+9	7921	31	#line 7921 "NXCDefs.h"
+9	54	31	#line 54 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	54	31	#line 54 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	55	31		set __signed_stack_001dropOff, 50
+9	54	34	#line 54 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	54	34	#line 54 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	55	34		mov __D0dropOff, __constValNeg360
+9	55	36	#line 55 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	56	36	#pragma macro 35
+9	56	36		acquire __rotateMutex0
+9	56	37		mov __rotate_ports3, __OUT_AB
+9	56	39		mov __rotate_power3, __signed_stack_001dropOff
+9	56	41		mov __rotate_angle3, __D0dropOff
+9	56	43		mov __rotate_turnpct3, __constVal0
+9	56	45		mov __rotate_sync3, __constVal0
+9	56	47		mov __rotate_stop3, __constVal1
+9	56	49		mov __rotate_theRVP3, __constVal32
+9	56	51		mov __rotate_theRVI3, __constVal0
+9	56	53		mov __rotate_theRVD3, __constVal96
+9	56	55		subcall __RotateMotor3, ____RotateMotor3_return
+9	56	57		release __rotateMutex0
+9	4570	58	#line 4570 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	55	58	#line 55 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	55	58	#line 55 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	56	58		set __signed_stack_001dropOff, 50
+9	55	61	#line 55 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	55	61	#line 55 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	56	61		set __D0dropOff, 360
+9	57	64	#line 57 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	58	64	#pragma macro 33
+9	58	64		acquire __rotateMutex0
+9	58	65		arrbuild __rotate_ports0, __constVal0
+9	58	69		mov __rotate_power0, __signed_stack_001dropOff
+9	58	71		mov __rotate_angle0, __D0dropOff
+9	58	73		mov __rotate_turnpct0, __constVal0
+9	58	75		mov __rotate_sync0, __constVal0
+9	58	77		mov __rotate_stop0, __constVal1
+9	58	79		mov __rotate_theRVP0, __constVal32
+9	58	81		mov __rotate_theRVI0, __constVal0
+9	58	83		mov __rotate_theRVD0, __constVal96
+9	58	85		subcall __RotateMotor0, ____RotateMotor0_return
+9	58	87		release __rotateMutex0
+9	4583	88	#line 4583 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	57	88	#line 57 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	60	88	#line 60 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+9	61	88		subret __dropOff_return
+10	65	0	#line 65 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	66	0		set __findDumpsite_7qG2_THRESHOLD_7qG2_000, 60
+10	65	3	#line 65 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	67	3	#line 67 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	68	3		set __findDumpsite_7qG2_x_7qG2_000, 0
+10	67	6	#line 67 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	67	6	#line 67 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	68	6		set __SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite, 3
+10	67	9	#line 67 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	68	9	#line 68 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	69	9		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_findDumpsite, __constVal1
+10	3729	11	#line 3729 "NXCDefs.h"
+10	3730	11		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite
+10	3729	13	#line 3729 "NXCDefs.h"
+10	3729	13	#line 3729 "NXCDefs.h"
+10	3730	13		mov __DU0SetSensorLight_inline_findDumpsite, __SetSensorLight_7qG2_bActive_7qG2_000_inline_findDumpsite
+10	3729	15	#line 3729 "NXCDefs.h"
+10	3730	15		tst 5, __zfSetSensorLight_inline_findDumpsite, __DU0SetSensorLight_inline_findDumpsite
+10	3729	18	#line 3729 "NXCDefs.h"
+10	3730	18		brtst 4, __001__NXC_Label_4, __zfSetSensorLight_inline_findDumpsite
+10	3729	21	#line 3729 "NXCDefs.h"
+10	3730	21		set __D0SetSensorLight_inline_findDumpsite, 5
+10	3729	24	#line 3729 "NXCDefs.h"
+10	3730	24		jmp __001__NXC_Label_5
+10	3729	26	#line 3729 "NXCDefs.h"
+10	3730	26		set __D0SetSensorLight_inline_findDumpsite, 6
+10	3729	29	#line 3729 "NXCDefs.h"
+10	3730	29		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __D0SetSensorLight_inline_findDumpsite
+10	3663	31	#line 3663 "NXCDefs.h"
+10	3664	31		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, 0
+10	3663	35	#line 3663 "NXCDefs.h"
+10	3730	35	#line 3730 "NXCDefs.h"
+10	3730	35	#line 3730 "NXCDefs.h"
+10	3731	35		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite
+10	3730	37	#line 3730 "NXCDefs.h"
+10	3730	37	#line 3730 "NXCDefs.h"
+10	3731	37		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_findDumpsite, 128
+10	3730	40	#line 3730 "NXCDefs.h"
+10	3676	40	#line 3676 "NXCDefs.h"
+10	3677	40		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, 1
+10	3676	44	#line 3676 "NXCDefs.h"
+10	3731	44	#line 3731 "NXCDefs.h"
+10	3731	44	#line 3731 "NXCDefs.h"
+10	3732	44		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite, __SetSensorLight_7qG2_port_7qG2_000_inline_findDumpsite
+10	3731	46	#line 3731 "NXCDefs.h"
+10	3694	46	#line 3694 "NXCDefs.h"
+10	3695	46	#pragma macro 4
+10	3695	46		acquire __ResetSensorMutex
+10	3695	47		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_findDumpsite
+10	3695	49		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+10	3695	51		release __ResetSensorMutex
+10	4701	52	#line 4701 "NXCDefs.h"
+10	3694	52	#line 3694 "NXCDefs.h"
+10	3732	52	#line 3732 "NXCDefs.h"
+10	68	52	#line 68 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	68	52	#line 68 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	69	52		mov __signed_stack_001findDumpsite, __findDumpsite_7qG2_x_7qG2_000
+10	68	54	#line 68 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	68	54	#line 68 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	69	54		set __D0findDumpsite, 0
+10	68	57	#line 68 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	69	57		cmp 4, __zffindDumpsite, __signed_stack_001findDumpsite, __D0findDumpsite
+10	68	61	#line 68 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	69	61		mov __D0findDumpsite, __zffindDumpsite
+10	69	63	#line 69 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	70	63		brtst 4, __NXC_Label_544, __zffindDumpsite
+10	69	66	#line 69 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	70	66		getin __signed_stack_001findDumpsite, __constVal3, 4
+10	69	70	#line 69 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	69	70	#line 69 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	70	70		mov __D0findDumpsite, __findDumpsite_7qG2_THRESHOLD_7qG2_000
+10	69	72	#line 69 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	70	72		cmp 1, __zffindDumpsite, __signed_stack_001findDumpsite, __D0findDumpsite
+10	69	76	#line 69 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	70	76		mov __D0findDumpsite, __zffindDumpsite
+10	70	78	#line 70 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	71	78		brtst 4, __NXC_Label_549, __zffindDumpsite
+10	70	81	#line 70 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	71	81		getin __signed_stack_001findDumpsite, __constVal3, 4
+10	70	85	#line 70 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	70	85	#line 70 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	71	85		set __D0findDumpsite, 97
+10	70	88	#line 70 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	71	88		cmp 1, __zffindDumpsite, __signed_stack_001findDumpsite, __D0findDumpsite
+10	70	92	#line 70 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	71	92		mov __D0findDumpsite, __zffindDumpsite
+10	71	94	#line 71 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	72	94		brtst 4, __NXC_Label_552, __zffindDumpsite
+10	72	97	#line 72 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	73	97		subcall dropOff, __dropOff_return
+10	72	99	#line 72 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	73	99	#line 73 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	74	99		set __findDumpsite_7qG2_x_7qG2_000, 1
+10	73	102	#line 73 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	73	102	#line 73 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	75	102	#line 75 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	76	102		jmp __NXC_Label_555
+10	75	104	#line 75 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	76	104		set __D0findDumpsite, 75
+10	76	107	#line 76 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	77	107	#pragma macro 7
+10	77	107		setout __OUT_AB, 2, __D0findDumpsite, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+10	4766	130	#line 4766 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	76	130	#line 76 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	77	130	#line 77 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	78	130		subcall lightavoid, __lightavoid_return
+10	77	132	#line 77 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	79	132	#line 79 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	80	132	#line 80 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	81	132		jmp __NXC_Label_558
+10	80	134	#line 80 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	81	134		set __D0findDumpsite, 50
+10	81	137	#line 81 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	82	137	#pragma macro 7
+10	82	137		setout __constVal0, 2, __D0findDumpsite, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+10	4781	160	#line 4781 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	81	160	#line 81 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	81	160	#line 81 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	82	160		set __D0findDumpsite, 50
+10	82	163	#line 82 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	83	163	#pragma macro 10
+10	83	163		acquire __OnRevMutex
+10	83	164		neg __OnRev_Tmp, __D0findDumpsite
+10	83	167		setout __constVal1, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+10	83	190		release __OnRevMutex
+10	4788	191	#line 4788 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	82	191	#line 82 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	84	191	#line 84 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	86	191	#line 86 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	87	191		jmp __NXC_Label_543
+10	86	193	#line 86 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	86	193	#line 86 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+10	87	193		subret __findDumpsite_return
+11	112	0	#line 112 "\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc"
+11	113	0		subret ____initialize_global_data_return
 #CLUMPS
 Clump	Name	Offset	File
-0	main	0	C:\Users\Paul\AppData\Local\Temp\temp.nxc
-1	__RotateMotor0	133	NXTDefs.h
-2	__RotateMotor3	302	NXTDefs.h
-3	__ResetSensorSubroutine	471	NXTDefs.h
-4	__ReadLSBytes1	484	NXTDefs.h
-5	closeClaw	569	C:\Users\Paul\AppData\Local\Temp\temp.nxc
-6	openClaw	626	C:\Users\Paul\AppData\Local\Temp\temp.nxc
-7	avoid	688	C:\Users\Paul\AppData\Local\Temp\temp.nxc
-8	dropOff	820	C:\Users\Paul\AppData\Local\Temp\temp.nxc
-9	findDumpsite	910	C:\Users\Paul\AppData\Local\Temp\temp.nxc
-10	__initialize_global_data	1105	C:\Users\Paul\AppData\Local\Temp\temp.nxc
+0	main	0	\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc
+1	__RotateMotor0	218	NXTDefs.h
+2	__RotateMotor3	387	NXTDefs.h
+3	__ResetSensorSubroutine	556	NXTDefs.h
+4	__ReadLSBytes1	569	NXTDefs.h
+5	closeClaw	654	\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc
+6	openClaw	711	\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc
+7	avoid	773	\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc
+8	lightavoid	997	\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc
+9	dropOff	1186	\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc
+10	findDumpsite	1276	\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc
+11	__initialize_global_data	1471	\\Mac\Home\Documents\GitHub\ENGR102\wasteDisposal.nxc
