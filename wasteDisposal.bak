@@ -16,7 +16,7 @@ sub openClaw(){
 
 sub avoid(){
 //avoid checks 30cm in front, if obstacle, turns 45 degrees left
-    const int THRESHOLD = 30;
+    const int THRESHOLD = 32;
 
     SetSensorLowspeed(IN_2); //Ultrasonic sensor
     if(SensorUS(IN_2) < THRESHOLD){
@@ -27,7 +27,7 @@ sub avoid(){
          //RotateMotor(OUT_A, 75, -270);
          Wait(1000);
          Off(OUT_AB);
-         RotateMotor(OUT_A, 50, 90);
+         RotateMotor(OUT_A, 50, 135);
          
     }
 
@@ -39,6 +39,8 @@ sub lightavoid(){
 
     SetSensorLowspeed(IN_2); //Ultrasonic sensor
     if(SensorUS(IN_2) < THRESHOLD){
+         OnRev(OUT_AB, 50);
+         Wait(500);
          Off(OUT_AB);
          OnFwd(OUT_A, 50);
          OnRev(OUT_B, 50);
