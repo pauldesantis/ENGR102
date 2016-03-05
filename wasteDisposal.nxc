@@ -1,3 +1,4 @@
+int avoids = 0;
 sub closeClaw(){
 //this function will open the claw by rotating motor c forward
        OnFwd(OUT_C, 50);
@@ -18,16 +19,32 @@ sub avoid(){
 //avoid checks 30cm in front, if obstacle, turns 45 degrees left
     const int THRESHOLD = 32;
 
+
     SetSensorLowspeed(IN_2); //Ultrasonic sensor
     if(SensorUS(IN_2) < THRESHOLD){
-         Off(OUT_AB);
-         OnRev(OUT_A, 50);
-         OnRev(OUT_B, 75);
-         //RotateMotor(OUT_B, 50, -270);
-         //RotateMotor(OUT_A, 75, -270);
-         Wait(1000);
-         Off(OUT_AB);
-         RotateMotor(OUT_A, 50, 135);
+         if (avoids > 5){
+             Off(OUT_AB);                       //motors turn off
+             OnRev(OUT_A, 50);                  //slight left
+             OnRev(OUT_B, 75);
+             Wait(1000);                        //waits for a second
+             Off(OUT_AB);
+             OnRev(OUT_B, 50);                  //turns right
+             Wait(750);
+             avoids = avoids + 1;               //counts amount of avoids
+             if (avoids == 10){                 //if 10 avoids reset avoid counter
+                avoids = 1;
+             }
+         }
+         else{
+             Off(OUT_AB);                       //motors turn off
+             OnRev(OUT_A, 75);                  // slight right
+             OnRev(OUT_B, 50);
+             Wait(1000);                        //waits for a second
+             Off(OUT_AB);
+             OnRev(OUT_A, 50);                  //turns left
+             Wait(750);
+             avoids = avoids + 1;              //counts amount of avoids
+         }
          
     }
 
