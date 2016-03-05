@@ -1,10 +1,14 @@
-int avoids = 0;
+int avoids = 0;                          //instantiate the avoid counter
+
+const int AVOID_THRESHOLD = 32;          //Sets the avoidance threashold (US sensor)
+const int THRESHOLD = 57;                //Sets the value of the light threshold (light sensor)
+
+
 sub closeClaw(){
 //this function will open the claw by rotating motor c forward
        OnFwd(OUT_C, 50);
        Wait(500);
        Off(OUT_C);
-       //RotateMotor(OUT_C, 50, 150);
 }
 
 sub openClaw(){
@@ -17,33 +21,31 @@ sub openClaw(){
 
 sub avoid(){
 //avoid checks 30cm in front, if obstacle, turns 45 degrees left
-    const int THRESHOLD = 32;
+    SetSensorLowspeed(IN_2);
 
-
-    SetSensorLowspeed(IN_2); //Ultrasonic sensor
-    if(SensorUS(IN_2) < THRESHOLD){
+    if(SensorUS(IN_2) < AVOID_THRESHOLD){
          if (avoids > 5){
-             Off(OUT_AB);                       //motors turn off
-             OnRev(OUT_A, 50);                  //slight left
+             Off(OUT_AB);                //motors turn off
+             OnRev(OUT_A, 50);           //slight left
              OnRev(OUT_B, 75);
-             Wait(1000);                        //waits for a second
+             Wait(1000);                 //waits for a second
              Off(OUT_AB);
-             OnRev(OUT_B, 50);                  //turns right
+             OnRev(OUT_B, 50);           //turns right
              Wait(750);
-             avoids = avoids + 1;               //counts amount of avoids
-             if (avoids == 10){                 //if 10 avoids reset avoid counter
+             avoids = avoids + 1;        //counts amount of avoids
+             if (avoids == 10){          //if 10 avoids reset avoid counter
                 avoids = 1;
              }
          }
          else{
-             Off(OUT_AB);                       //motors turn off
-             OnRev(OUT_A, 75);                  // slight right
+             Off(OUT_AB);                //motors turn off
+             OnRev(OUT_A, 75);           // slight right
              OnRev(OUT_B, 50);
-             Wait(1000);                        //waits for a second
+             Wait(1000);                 //waits for a second
              Off(OUT_AB);
-             OnRev(OUT_A, 50);                  //turns left
+             OnRev(OUT_A, 50);           //turns left
              Wait(750);
-             avoids = avoids + 1;              //counts amount of avoids
+             avoids = avoids + 1;        //counts amount of avoids
          }
          
     }
@@ -52,10 +54,10 @@ sub avoid(){
 
 sub lightavoid(){
 //avoid checks 30cm in front, if obstacle, turns 45 degrees left
-    const int THRESHOLD = 30;
 
-    SetSensorLowspeed(IN_2); //Ultrasonic sensor
-    if(SensorUS(IN_2) < THRESHOLD){
+SetSensorLowspeed(IN_2);                 //set up ultrasonic sensor
+
+    if(SensorUS(IN_2) < AVOID_THRESHOLD){
          OnRev(OUT_AB, 50);
          Wait(500);
          Off(OUT_AB);
@@ -68,11 +70,11 @@ sub lightavoid(){
 }
 
 sub dropOff(){
-    Off(OUT_AB);                        //turns off wheels for placement of trash
-    openClaw();                         //runs open claw
-    Wait(1000);                         //waits for claw to completely open
-    RotateMotor(OUT_AB, 50, -360);      //robot backs away from trash
-    RotateMotor(OUT_A, 50, 360);        //Turn distance?
+    Off(OUT_AB);                         //turns off wheels for placement of trash
+    openClaw();                          //runs open claw
+    Wait(1000);                          //waits for claw to completely open
+    RotateMotor(OUT_AB, 50, -360);       //robot backs away from trash
+    RotateMotor(OUT_A, 50, 360);         //Turn distance?
     
 }
 
@@ -81,11 +83,11 @@ sub findDumpsite(){
 //robot will rotate looking for light. If the light value is greater than the
 //threshold, the robot will stop looking and move toward the light
 
-    const int THRESHOLD = 57;    //Sets the value of the light threshold
-    int x = false;               //Creates a variable that will be used to keep findDumpsite looping
+    SetSensorLight(IN_4);                //set up light sensor
+    int x = false;                       //Creates a variable that will be used to keep findDumpsite looping
     
-    SetSensorLight(IN_4);        //Light sensor
-    while(x == false){           // x is false until the robot drops off the trash, in which case it returns to main
+
+    while(x == false){                   // x is false until the robot drops off the trash, in which case it returns to main
        if (Sensor(IN_4) > THRESHOLD){
           if (Sensor(IN_4) > 97){
             dropOff();
@@ -96,26 +98,38 @@ sub findDumpsite(){
             lightavoid();
            }
            }
-       else{                  // if the sensor is less than the threshold, the robot spins
+       else{                             // if the sensor is less than the threshold, the robot spins
          OnFwd(OUT_A, 50);
          OnRev(OUT_B, 50);
        }
        }
 }
 
+
+
 task main(){
-   SetSensorColorFull(IN_1);
+SetSensorColorFull(IN_1);
    while(true){
         OnFwd(OUT_AB, 75);
         avoid();
-        if(Sensor(IN_1)==2){     //if the color is blue closeClaw()
+        if(Sensor(IN_1)==2){             //if the color is blue, closeClaw() (2 means blue)
             Off(OUT_AB);
             closeClaw();
+            
+            OnFwd(OUT_A,50);             //shimmy to make sure the canister is snug
+            OnRev(OUT_B,50);
+            Wait(400);
+            OnFwd(OUT_B,50);
+            OnRev(OUT_A,50);
+            Wait(400);
+            OnFwd(OUT_A,50);
+            OnRev(OUT_B,50);
+            
             Wait(500);
             findDumpsite();
         }
         else{
-            if(Sensor(IN_1)==4){           // yellow
+            if(Sensor(IN_1)==4){         //if the color is yellow, backup and turn around(4 means yellow)
             OnRev(OUT_AB, 75);
             Wait(500);
             Off(OUT_AB);
